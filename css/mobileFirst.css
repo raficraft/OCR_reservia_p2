@@ -1,0 +1,25 @@
+
+
+/*Smartphone*/
+
+@media screen and (max-width: 640px){
+
+
+    .btnDesktop{ display: none; }
+
+}
+
+/*Tablette*/
+
+
+@media screen and (min-width: 641px){
+
+    .searchSubmit .btnMobil{  display : none; }
+
+}
+
+
+
+
+
+

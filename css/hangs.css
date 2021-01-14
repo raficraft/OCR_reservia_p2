@@ -1,0 +1,30 @@
+
+.hangs h1{
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.hangs h1{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 640px){
+
+    .hangs{ 
+        padding:  0 1rem; 
+    }
+
+    .hangs h1{  padding-right : 2rem;  }
+}
+
+
+@media screen and (min-width: 640px){
+
+    .hangs{ 
+        padding : 0 3.5rem;
+        inline-size: 1440px;
+        margin : auto;
+    }
+
+}

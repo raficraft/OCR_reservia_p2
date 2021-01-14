@@ -1,36 +1,118 @@
-*{
-    box-sizing: border-box;
+
+
+
+/*Tools flexBox*/
+
+.flex__rowWrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
 }
-img{
-    max-width: 100%;
-    height: auto;;
+.flex__rowWrap_cc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content : center;
+    align-items : center;
+}
+
+.flex__rowWrap_spaceAroundCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.flex__rowWrap_spaceAroundStart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+
+}
+
+.flex__rowWrap_spaceBetweehCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.flex__rowWrap_spaceBetweenStart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.flex__rowWrap_startCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.flex__rowNowrap_startCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.flex__rowNowrap_cc{
+    display : flex;
+    flex-direction : row;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+
 }
 
 
-:root{
-    --blueBasic :rgba(0,101,252,1);
-    --softBlue : rgba(222,225,235,1);
-    --gray : rgba(242,242,242,1);
+.flex__rowWrap_cc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 }
-body{
-    font-size : 16px;
-    font-family: "Raleway", "Sans serif";
+
+
+
+.flex__colWrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-li{
-    list-style: none;
+.flex__colWrap_cc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-a{
-    text-decoration : none;
-    color : black;
+.flex__colWrap_spaceBetween{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+   
 }
 
-h1{
-    font-size : 1.25em;
-    font-weight: 700;
-}
+
 
 /*Début de la page web*/
 
@@ -311,4 +393,8 @@ main{
 .popular .title i{
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.popular .sticker{
+    
 }
