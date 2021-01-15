@@ -1,11 +1,11 @@
 /*header*/
 
-header{
+.header{
     display: flex;
     flex-wrap: wrap;
     
 }
-.logo img{ height: 1.5rem;  }
+.logo img{ height: 2.5rem;  }
 
 nav{
     display: flex;
@@ -28,7 +28,7 @@ nav .nav__login {
 
     
 
-    header{
+    .header{
         padding : 1.75rem 0
     }
     
@@ -80,7 +80,7 @@ nav .nav__login {
         flex-wrap: wrap;
     }
 
-    header{
+    .header{
         padding : 0 3.5rem;
         margin-bottom: 3rem;
         display: flex;   

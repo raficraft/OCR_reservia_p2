@@ -56,18 +56,12 @@ table {
 *{
   box-sizing: border-box;
 }
+
 img{
   max-width: 100%;
-  height: auto;;
+  height: auto;
 }
 
-
-:root{
-  --blueBasic :rgba(0,101,252,1);
-  --softBlue : rgba(222,225,235,1);
-  --gray : rgba(242,242,242,1);
-
-}
 
 
 :root{
@@ -94,10 +88,14 @@ h1{
     font-weight: 700;
 }
 
+b{
+  font-weight: bold;;
+}
+
 .info{
   display : flex;  
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .info i{
@@ -116,19 +114,16 @@ h1{
 }
 
 .info p{
-  padding-top : 0.25rem;
-  line-height: 1.25rem;;
+  line-height: 1.25rem;
 }
 
 @media screen and (min-width: 640px){
 
   .searchSubmit .btnMobil{  display : none; }
 
-  .info{ 
-      margin-left : 0.25rem;
-  }
+  .info{ margin-left : 0.25rem; }
 
-  .info i {}
+  
  
 
 

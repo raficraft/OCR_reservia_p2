@@ -26,7 +26,7 @@
     border: 1px solid var(--gray);
     text-indent: 1rem;
     font-weight: 700;
-    width: 15rem;  
+    padding-right : 1.5rem
 }
 
 .search INPUT::placeholder{
@@ -63,7 +63,7 @@
     }
 }
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 641px){
 
     .searchSubmit .btnMobil{  display : none; }
 
@@ -71,7 +71,7 @@
         background-color: var(--blueBasic);
         border-top-right-radius : 1em 1em;
         border-bottom-right-radius : 1em 1em;
-        padding : 0 1.5rem 0 1.5rem;
+        padding : 0 1rem 0 1rem;
         font-weight: 700;
     }
 }

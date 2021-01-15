@@ -1,0 +1,114 @@
+
+main {
+    margin-top : 3rem;
+}
+
+
+.offers{
+    display : flex;    
+}
+
+.rent, .popular{
+    padding: 3rem 1rem;
+    background-color:var(--gray);
+}
+
+.headerRent, .headerPopular{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+
+.headerPopular i {
+    font-size : 1.125rem;
+}
+
+.sticker{
+    padding : 0.25rem;
+    background-color:white;
+    margin : 0.5rem 0;
+    border-radius: 1rem;
+}
+
+.popular .sticker{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    height : 140px;
+   
+}
+
+.popular .stickerImg{
+
+    background-color: yellowgreen;
+    overflow: hidden;
+    max-width: 35%;
+    display: flex;
+    margin-right : 1.25rem;
+ 
+}
+
+
+.popular .stickerImg IMG{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; 
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;   
+}
+
+.popular .stickerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right : 2rem;
+    
+}
+
+.popularName{
+    font-weight: bold;
+    flex : 0 1 20%;
+    align-self: stretch;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display : flex;
+}
+
+.popularPrice{
+    flex : 0 1 20%;
+    align-self: stretch;
+}
+
+.star{
+    flex : 0 1 40%;
+    display : flex;
+    align-items: flex-end;
+}
+
+
+.star i{
+    font-size:0.75rem;  
+}
+
+
+
+
+@media screen and (max-width: 640px){
+
+    .offers {
+        flex-direction: column-reverse;
+    }
+
+    .popular{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media screen and (min-width: 640px){
+
+}
