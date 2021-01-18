@@ -126,12 +126,38 @@ b{
   .searchSubmit .btnMobil{  display : none; }
 
   .info{ margin-left : 0.25rem; }
-
-  
- 
-
-
 }
+
+
+
+.sticker{
+  transition: 0.5s;
+}
+
+.sticker:hover{
+  transform:scale(1.05);
+  transition: 0.5s;
+}
+
+.filter ul li:hover > a{
+  background-color: var(--gray);
+  transition :0.5s;
+}
+
+.filter ul li:hover i{
+  background-color: var(--blueBasic);
+  color : white;
+  transition :1s;
+}
+.filter ul li a{
+  transition :0.5s;
+}
+
+.filter ul li i{
+  transition :1s;
+}
+
+
 
 
 

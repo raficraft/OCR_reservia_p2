@@ -24,6 +24,7 @@ footer section{
     display: flex;
     flex-direction: column;
     margin-bottom : 2.5rem;
+    padding-left: 2.5rem;
 }
 
 
@@ -42,12 +43,18 @@ footer section li{
 }
 
 footer section li a{ 
-    width: 33%;
-    margin: 1.5rem 0 0 0;
-    width : 100%;
+    width : 60%;
     display: flex;
+    margin: 1.5rem 0 0 0;
+    padding-bottom : 0.5em;
 }
 
+
+
+footer a:hover{
+    transition : 0.5s;
+    border-bottom : 1px solid;
+}
 
 @media screen and (max-width: 640px){
 

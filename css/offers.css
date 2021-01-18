@@ -8,8 +8,7 @@ main {
 }
 .offers{
     display : flex;  
-    max-width: 1440px;
-  
+    max-width: 1440px;  
 }
 
 .rent, .popular{
@@ -198,12 +197,7 @@ main {
         max-width : 50%
     }
 
-       .filter UL{
-           display: flex;
-           flex-wrap: wrap;
-           max-width:80%;
-           justify-content: center;
-    }
+    
       .filter{
         flex-direction:column;
     }

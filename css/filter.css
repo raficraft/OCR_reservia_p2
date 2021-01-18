@@ -72,7 +72,6 @@
     }
     .filter ul {
         display : flex;
-        flex-direction: row;
         flex-wrap: wrap;
     }
   
@@ -82,6 +81,11 @@
 
     .searchSubmit .btnMobil{  display : none; }
 
+    .filter UL{
+        display: flex;
+        flex-wrap: wrap;
+        max-width:80%;
+ }
   
 
    
