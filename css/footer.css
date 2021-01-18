@@ -2,8 +2,9 @@ footer{
     display : flex;
     justify-content: center;
     background-color: var(--gray);
-    padding: 2rem 0rem;
+    padding: 2rem 1.5rem;
     width: 100%;
+
 }
 
 .footerWrapper{
@@ -22,6 +23,7 @@ footer section{
     width: 33%;
     display: flex;
     flex-direction: column;
+    margin-bottom : 2.5rem;
 }
 
 
