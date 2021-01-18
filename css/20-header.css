@@ -2,7 +2,8 @@
 
 .header{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
     
 }
 .logo img{ height: 2.5rem;  }
@@ -12,29 +13,18 @@ nav{
     justify-content: space-between;
 }
 
-nav .nav__login { 
-    color: rgba(0,101,252,1);
-    font-weight: bold;
-}
-
-.signup{
-    font-weight: bold;
-    color: var(--blueBasic); 
-}
+nav .nav__login {  color: rgba(0,101,252,1);    font-weight: bold;}
+.signup{ font-weight: bold;     color: var(--blueBasic); }
 
 /*Smartphone*/
 
 @media screen and (max-width: 640px){
 
+    .header{ padding : 1.75rem 0 }
     
-
-    .header{
-        padding : 1.75rem 0
-    }
-    
-    .logo {
-        order: 0;
-        flex : 0 1 50%;
+    .logo {       
+        order: 0; 
+        flex : 1 1 auto;        
         padding-left: 1rem;
     }
       .signup {
@@ -44,20 +34,22 @@ nav .nav__login {
         text-align: right;
         padding-right: 1rem;
     }
+
     .nav {
-        order: 2;
-        margin-top: 2rem;
-        
+        order: 2;             
         display: flex;
         justify-content: space-around;
         align-content: center;
-        width: 100%;        
+        width: 100%; 
+        margin-top: 2rem;        
     }
 
-    .navLink{
-        padding-bottom: 1rem; 
+    .navLink{         
         flex : 0 1 auto;
         width : 100%;
+
+        padding-bottom: 1rem;
+
         text-align: center;
         border-bottom: 2px solid var(--gray); 
     }
@@ -80,18 +72,19 @@ nav .nav__login {
         flex-wrap: wrap;
     }
 
-    .header{
-        padding : 0 3.5rem;
-        margin-bottom: 3rem;
+    .header{        
         display: flex;   
         align-items: flex-end;
         margin : 0 auto 3rem auto;
         /*Cette propriété est à rapprocher de block-size qui définit l'autre dimension de l'élément.*/
-        inline-size: 1440px;    
+        max-width: 1440px;  
+        inline-size: 1440px;
+        margin-bottom: 3rem;
+        
     }
-    .logo{  flex: 1 1 auto; }
+    .logo{  flex: 1 1 auto }
 
-    .navLink, .signup{
+    .navLink, .signup{        
         margin: 0 0.5rem;
         padding : 2.75rem 1.5rem 0.5rem 1.5rem; 
         font-size: 14px;
@@ -108,8 +101,8 @@ nav .nav__login {
     }
 
     .signup{
-        font-weight: bold;
         margin-right : 0;
+        font-weight: bold;        
     }
     
 

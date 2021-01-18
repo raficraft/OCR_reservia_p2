@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -121,6 +122,11 @@ b{
   line-height: 1.25rem;
 }
 
+
+
+
+/*A dispatch dans les feuilles de styles ou à trier*/
+
 @media screen and (min-width: 640px){
 
   .searchSubmit .btnMobil{  display : none; }
@@ -135,12 +141,18 @@ b{
 }
 
 .sticker:hover{
-  transform:scale(1.05);
+  transform:scale(1.1);
   transition: 0.5s;
 }
 
+
+
 .filter ul li:hover > a{
   background-color: var(--gray);
+  transition :0.5s;
+}
+
+.filter ul li a{
   transition :0.5s;
 }
 
@@ -149,12 +161,14 @@ b{
   color : white;
   transition :1s;
 }
-.filter ul li a{
-  transition :0.5s;
-}
 
 .filter ul li i{
   transition :1s;
+}
+
+
+input{
+color: gray;
 }
 
 
