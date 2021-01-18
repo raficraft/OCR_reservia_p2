@@ -1,23 +1,22 @@
 
 main {
     margin-top : 3rem;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
 }
-
-
 .offers{
-    display : flex;   
+    display : flex; 
+    margin-bottom : 3rem; 
+    max-width: 1440px;
+  
 }
-
 
 .rent, .popular{
     padding: 3rem 1rem;
     background-color:var(--gray);
- 
 }
-
-
-
-
 
 .rentImg{
     overflow: hidden;
@@ -34,23 +33,13 @@ main {
     width: 100%;
     max-height: 100%;   
 }
+.rentName{ font-weight : bold;}
 
+.rentInfo p{  margin-bottom: 0.5rem;}
 
-.rentName{
-    font-weight : bold;
-}
+.rentInfo .star{ margin-top : 0.5rem;}
 
-.rentInfo p{
-    margin-bottom: 0.5rem;
-}
-
-.rentInfo .star{
-    margin-top : 0.5rem;
-}
-
-.rentInfo{
-    padding : 0.5rem 0.75rem;
-}
+.rentInfo{  padding : 0.5rem 0.75rem;}
 
 .headerRent, .headerPopular{
     display: flex;
@@ -74,9 +63,9 @@ main {
 .sticker{
     padding : 0.25rem;
     background-color:white;
-    margin : 0.5rem 0;
+    margin : 0.75rem 0;
     border-radius: 1rem;
-    box-shadow :0px 0px 16px -3px #686868;
+    box-shadow :0px 0px 9px -3px #686868;
 }
 
 .popular .sticker{
@@ -89,6 +78,7 @@ main {
 
 .popular .stickerImg{
     margin-right : 1.25rem;
+     /*cover de l'image dans un elment flex*/
     overflow: hidden;
     max-width: 35%;
     display: flex;
@@ -98,6 +88,7 @@ main {
 .popular .stickerImg IMG{
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; 
+    /*cover de l'image dans un elment flex*/
     object-fit: cover;
     max-width: 100%;
     width: 100%;
@@ -217,13 +208,15 @@ main {
       .filter{
         flex-direction:column;
     }
+    
+  
 
 }
 
+
 @media screen and (max-width: 840px){
-       .popular .sticker{
-       height : 160px;
-    }
+
+    .popular .sticker{ height : 160px; }
     
 }
 @media screen and (min-width: 840px){
