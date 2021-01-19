@@ -16,6 +16,8 @@ nav{
 nav .nav__login {  color: rgba(0,101,252,1);    font-weight: bold;}
 .signup{ font-weight: bold;     color: var(--blueBasic); }
 
+
+
 /*Smartphone*/
 
 @media screen and (max-width: 640px){
@@ -68,7 +70,7 @@ nav .nav__login {  color: rgba(0,101,252,1);    font-weight: bold;}
 
     body{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
