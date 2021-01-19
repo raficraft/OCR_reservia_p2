@@ -5,17 +5,13 @@
     line-height: 1.5rem;
 }
 
-.hangs h1{
-    margin-bottom: 1rem;
-}
+.hangs h1{ margin-bottom: 1rem;}
 
 @media screen and (max-width: 640px){
 
-    .hangs{ 
-        padding:  0 1rem; 
-    }
-
+    .hangs{  padding:  0 1rem;}
     .hangs h1{  padding-right : 2rem;  }
+    
 }
 
 

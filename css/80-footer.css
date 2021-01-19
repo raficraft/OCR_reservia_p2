@@ -17,8 +17,6 @@ footer{
     flex: 1;
 }
 
-
-
 footer section{
     width: 33%;
     display: flex;
@@ -26,7 +24,6 @@ footer section{
     margin-bottom : 2.5rem;
     padding-left: 2.5rem;
 }
-
 
 .footer section h1{
     display: flex;
