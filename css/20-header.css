@@ -101,6 +101,10 @@ nav .nav__login {  color: rgba(0,101,252,1);    font-weight: bold;}
     .navLink[data-active="false"]{
         border-top : 2px solid transparent;
     }
+    .navLink[data-active="false"]:hover{
+        border-top : 2px solid var(--blueBasic);
+    }
+    
 
     .signup{
         margin-right : 0;
