@@ -1,4 +1,32 @@
 
+
+
+/*Repère vertical et horizontal.
+Permet de contrôler les alignements.
+NB:Ecrire une fonction SASS, 
+réflechir à une grille de fond et|ou 
+en surimpression
+*/
+
+
+body:after{
+  content : '';
+  height : 100vw;
+  width: 1px;
+  background-color: red;
+  position: absolute;
+  left : 18rem;
+}
+body:before{
+  content : '';
+  height : 1px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  top : 30rem;
+}
+
+
 main {
     margin-top: 2.25rem;
 }
@@ -18,41 +46,16 @@ main {
 
 
     .header,.hangs,main,footer{
+
         padding-left: 3.5rem;
         padding-right: 3.5rem;
         inline-size: 1440px;
         margin-left : auto;
-        margin-right : auto;        
+        margin-right : auto;      
+          
     }
 
 }
-
-
-
-/*Style Css permettant de poser un repères 
-horizontale et vertical dans la page.
-Permet de contrôler les alignements.
-*/
-
-/*
-body:after{
-  content : '';
-  height : 100%;
-  width: 1px;
-  background-color: red;
-  position: absolute;
-  left : 3.5rem;
-}
-body:before{
-  content : '';
-  height : 1px;
-  width: 100%;
-  background-color: red;
-  position: absolute;
-  top : 30rem;
-}
-*/
-
 
 
 
@@ -104,7 +107,6 @@ body:before{
   box-shadow :0px 0px 9px -3px #686868;  
   transition: 0.5s;
 }
-
 
 
 .sticker:hover{

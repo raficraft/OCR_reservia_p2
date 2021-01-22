@@ -10,13 +10,7 @@
 .stickerContent{ margin-bottom:2rem;}
 .rent .sticker{   height: 200px; }
 
-.sticker{
-    padding : 0.25rem; 
-    margin : 0.75rem 0;
-    background-color:white;
-    border-radius: 1rem;
-    box-shadow :0px 0px 9px -3px #686868;
-}
+
 
 
 .star{
@@ -38,14 +32,7 @@
 }
 
 
-@media screen and (min-width: 480px){
 
-    .filter UL{
-        display: flex;
-        flex-wrap: wrap;
-        max-width:100%
-    }
-}
 
 @media screen and (min-width: 640px){
 
@@ -53,7 +40,7 @@
     .rent, .popular{  margin : 0 1.5rem;  border-radius: 1rem; }
     .stickerContent{  display: flex;  flex-wrap: wrap;}
     .stickerContent .sticker { flex : 1 1 100%; margin : 0.5rem;} 
-    .filter{  flex-direction:column;  align-items: flex-start; }
+    
 
 }
 
