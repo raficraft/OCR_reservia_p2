@@ -70,7 +70,8 @@ a{
 h1{
     font-size : 1.25em;
     font-weight: 700;
-}
+    margin-bottom : 1.5rem;
+  }
 
 b{
   font-weight: bold;;

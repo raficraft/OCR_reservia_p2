@@ -1,13 +1,15 @@
 .offers{   
     display : flex; 
-    max-width: 1440px; }
+    max-width: 1440px;
+    margin-bottom: 3rem;;
+
+}
 
 .rent, .popular{
     padding: 3rem 1rem;
     background-color:var(--gray);
 }
 
-.stickerContent{ margin-bottom:2rem;}
 .rent .sticker{   height: 200px; }
 
 
@@ -21,40 +23,54 @@
 }
 
 .star i{   font-size:0.75rem;  margin-right : 1px;}
-.watchMore {   font-weight : bold;}
+.watchMore {   
+    font-weight : bold;
+}
 
 
 @media screen and (max-width: 640px){
 
     .offers {  flex-direction: column-reverse;}    
     .popular{ display: flex; flex-direction: column; }
+   
     
 }
 
 
 
 
-@media screen and (min-width: 640px){
 
+/*LapTop*/
 
-    .rent, .popular{  margin : 0 1.5rem;  border-radius: 1rem; }
-    .stickerContent{  display: flex;  flex-wrap: wrap;}
-    .stickerContent .sticker { flex : 1 1 100%; margin : 0.5rem;} 
-    
+@media screen and (min-width:641px) and (max-width: 1024px){
 
-}
-
-
-@media screen and (max-width: 840px){
-
+    .offers {  
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .offers{margin-bottom : 3.5rem}
+    .rent, .popular{  margin : 0 1.5rem;}
+    .stickerContent{  display: flex;  flex-wrap: wrap; width : 100%;}
+    .stickerContent .sticker { flex : 1 1 33%; margin : 0.5rem;}
     .popular .sticker{ height : 160px; }
-    
+    .popular UL{
+        display: flex;
+    }
 }
-@media screen and (min-width: 840px){
+
+
+/*Dekstop*/
+
+
+@media screen and (min-width: 1025px){
 
 
     .rent, .popular{ border-radius: 1rem;}
-    .stickerContent{ display: flex;  flex-wrap: wrap; }
+    .stickerContent{ 
+        display: flex; 
+        flex-wrap: wrap; 
+        margin-bottom: 1.5rem;}
+
     .stickerContent .sticker { flex : 1 1 29%; margin : 1rem; }
   
     
@@ -64,7 +80,10 @@
         max-width:100%
 
     }
-        
-        
+
+    .watchMore {   
+        font-weight : bold;
+        padding-left : 1.5rem
+    }
 
 }

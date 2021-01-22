@@ -56,12 +56,9 @@
 
     .btnDesktop{ display: none; }
 
-    .search{
-        padding-right : 1.5rem;
-    }
+    .search{  padding-right : 1.5rem;}
 
     .search Input{ flex : 1;  }
-
 
     .searchSubmit { 
         position : absolute;
@@ -85,6 +82,8 @@
         border-bottom-right-radius : 1em 1em;        
         font-weight: 700;
     }
+
+    .search{margin-left : 0.5rem;}
    
 }
 

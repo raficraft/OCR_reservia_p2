@@ -3,10 +3,11 @@
 .header{
     display: flex;
     flex-wrap: wrap; 
-    justify-content: flex-start; 
     
 }
 .logo img{ height: 2.5rem;  }
+
+
 
 nav{
     display: flex;

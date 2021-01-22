@@ -79,6 +79,8 @@
         flex-wrap: wrap;
         max-width:100%
     }
+
+    
 }
 
 @media screen and (max-width: 640px){
@@ -90,7 +92,7 @@
     .filter ul { display : flex;     flex-wrap: wrap; }  
 }
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 641px){
 
     .filter{  flex-direction:column;  align-items: flex-start;  margin-bottom : 1.5rem;  }
     .filter UL{
@@ -100,9 +102,17 @@
  }  
     .filter h2{  margin-right : 1.5rem;   margin-left : 0.25rem;}
     .filter li{ margin: 0 0.75rem; }
+
+
+    
 }
 
-@media screen and (min-width: 840px){
+@media screen and (min-width: 1025px){
+
+    .filter{
+        flex-direction: row;
+        align-items: center;
+    }
 
 
     .filter UL{

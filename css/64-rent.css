@@ -1,3 +1,5 @@
+
+
 .rentImg{
     display: flex;
     overflow: hidden;    
@@ -14,6 +16,10 @@
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
+
+
+
+
 .rentName{ font-weight : bold;}
 .rentInfo p{  margin-bottom: 0.5rem;}
 .rentInfo .star{ margin-top : 0.5rem;}
@@ -28,18 +34,30 @@
 .headerPopular i { font-size : 1.125rem;}
 
 
-@media screen and (max-width: 640px){
-    .rent{  background-color: white; }
+
+
+
+@media screen and (min-width: 480px)and (max-width: 640px){
+  .rent{  
+        max-width: 50%;
+        margin : 0;
+        border-radius: 0;
+        background-color: white;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width: 1024px){
+    .rent{  
+        background-color: white;
+        flex : 1 1 100%;
+        margin : 0;
+    }
+    .rent article {margin-bottom : 2rem;}
     .headerRent{ padding-left : 0.25rem}
 }
 
 
-@media screen and (min-width: 480px){
-  .rent{  max-width: 50%; }
-}
-
-
-@media screen and (min-width: 840px){  .rent{  margin : 0 1.5rem 0 0;  max-width: 68%; }
+@media screen and (min-width: 1025px){  .rent{  margin : 0 1.5rem 0 0;  max-width: 68%; }
         
 
 }

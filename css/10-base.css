@@ -5,39 +5,66 @@
 Permet de contrôler les alignements.
 NB:Ecrire une fonction SASS, 
 réflechir à une grille de fond et|ou 
-en surimpression
+en sur-impression.
+Outil JS dans le coin inférieure 
+de l'écran.
+
+
+
 */
 
 
 body:after{
-  content : '';
-  height : 100vw;
-  width: 1px;
-  background-color: red;
   position: absolute;
-  left : 18rem;
+  left : 3rem;
+  content : '';
+
+  width: 1px;
+  height : 500vw;
+  background-color: red;
 }
 body:before{
-  content : '';
-  height : 1px;
-  width: 100%;
-  background-color: red;
   position: absolute;
-  top : 30rem;
-}
+  top : 111rem;
+  content : '';
 
+  width: 100%;
+  height : 1px;
+  background-color: red;
+
+}
 
 main {
     margin-top: 2.25rem;
 }
 
+/*Design le plus vue dans le site et ses varaiantes*/
 
-/*Smartphone*/
+.sticker{
+  display : flex;
+  padding : 0.25rem; 
+  margin : 0.75rem 0;
+  background-color:white;
+  border-radius: 1rem;
+  box-shadow :0px 0px 9px -3px #686868;  
+  transition: 0.5s;
+}
 
-@media screen and (max-width: 640px){
-
+.stickerContent .sticker{
+  flex-direction: column;
 
 }
+
+
+
+
+.sticker:hover{
+  transform:scale(1.05);
+  transition: 0.5s;
+}
+
+
+
 
 /*Tablette*/
 
@@ -47,8 +74,8 @@ main {
 
     .header,.hangs,main,footer{
 
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         inline-size: 1440px;
         margin-left : auto;
         margin-right : auto;      
@@ -72,7 +99,7 @@ main {
   margin : 0 0.75rem 0 0.25rem;
   font-size: 0.75rem;
   color : var(--blueBasic);  
-  border : 1px solid var(--gray);
+  border : 1px solid rgb(148, 148, 148);
   display : flex;
   flex-direction : row;
   flex-wrap : nowrap;
@@ -87,6 +114,7 @@ main {
 
 
 
+
 /*A dispatch dans les feuilles de styles ou à trier*/
 
 @media screen and (min-width: 640px){
@@ -97,22 +125,9 @@ main {
 }
 
 
-/*Design le plus vue dans le site et ses varaiantes*/
-
-.sticker{
-  padding : 0.25rem; 
-  margin : 0.75rem 0;
-  background-color:white;
-  border-radius: 1rem;
-  box-shadow :0px 0px 9px -3px #686868;  
-  transition: 0.5s;
-}
 
 
-.sticker:hover{
-  transform:scale(1.1);
-  transition: 0.5s;
-}
+
 
 
 
