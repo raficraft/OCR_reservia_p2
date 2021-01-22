@@ -25,19 +25,14 @@
 .star i{   font-size:0.75rem;  margin-right : 1px;}
 .watchMore {   
     font-weight : bold;
+    padding-top: 1rem;;
 }
 
 
 @media screen and (max-width: 640px){
-
     .offers {  flex-direction: column-reverse;}    
-    .popular{ display: flex; flex-direction: column; }
-   
-    
+    .popular{ display: flex; flex-direction: column; } 
 }
-
-
-
 
 
 /*LapTop*/
@@ -55,6 +50,9 @@
     .popular .sticker{ height : 160px; }
     .popular UL{
         display: flex;
+    }
+    .watchMore{
+        padding-left: 1.5rem!important;
     }
 }
 
@@ -83,7 +81,9 @@
 
     .watchMore {   
         font-weight : bold;
-        padding-left : 1.5rem
+        padding-left : 1.5rem;
     }
 
 }
+
+

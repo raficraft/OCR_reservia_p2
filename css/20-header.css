@@ -2,12 +2,10 @@
 
 .header{
     display: flex;
-    flex-wrap: wrap; 
-    
+    flex-wrap: wrap;
 }
+
 .logo img{ height: 2.5rem;  }
-
-
 
 nav{
     display: flex;
@@ -79,8 +77,8 @@ nav .nav__login {  color: rgba(0,101,252,1);    font-weight: bold;}
         display: flex;   
         align-items: flex-end;
         margin : 0 auto 3rem auto;
-        /*Cette propriété est à rapprocher de block-size qui définit l'autre dimension de l'élément.*/
         max-width: 1440px;  
+        /*Cette propriété est à rapprocher de block-size qui définit l'autre dimension de l'élément.*/
         inline-size: 1440px;
         margin-bottom: 3rem;
         
@@ -92,8 +90,7 @@ nav .nav__login {  color: rgba(0,101,252,1);    font-weight: bold;}
         padding : 2.75rem 1.5rem 0.5rem 1.5rem; 
         font-size: 14px;
         font-weight: 500;
-    }
-    
+    }    
 
     .navLink[data-active="true"]{
         border-top : 2px solid var(--blueBasic);
@@ -105,8 +102,6 @@ nav .nav__login {  color: rgba(0,101,252,1);    font-weight: bold;}
     .navLink[data-active="false"]:hover{
         border-top : 2px solid var(--blueBasic);
     }
-    
-
     .signup{
         margin-right : 0;
         font-weight: bold;        

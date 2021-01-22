@@ -1,4 +1,6 @@
-
+.popular li{
+    display: flex;
+}
 
 .popular .sticker{
     display: flex;
@@ -74,7 +76,7 @@
     .popular .sticker{
         margin-left : 0.5rem;
         margin-right : 0.5rem;
-        height : 180px;
+        height : 140px;
     }
 
 
@@ -88,5 +90,20 @@
         max-width : 31%;
         padding : 3rem 2.5rem;
         margin : 0 0 0 1.5rem;
+    }
+
+    .popular .sticker{
+        height : 100%;
+        margin : 0rem 0 2rem;   
+    }
+}
+
+@media screen and (min-width: 1225px){
+
+  
+
+    .popular .sticker{
+        height : 140px;
+        margin : 1rem 0 2rem;        
     }
 }
