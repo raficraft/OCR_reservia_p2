@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/30-hangs.css" />
     <link rel="stylesheet" href="css/32-search.css" />
     <link rel="stylesheet" href="css/34-filter.css" />
+    <link rel="stylesheet" href="css/36-info.css" />
     <link rel="stylesheet" href="css/60-offers.css" />
+    <link rel="stylesheet" href="css/62-sticker.css" />
     <link rel="stylesheet" href="css/64-rent.css" />
     <link rel="stylesheet" href="css/66-popular.css" /> 
     <link rel="stylesheet" href="css/68-headBand.css" />
@@ -24,7 +26,9 @@
 
   <body>  
 
-      <header class="header">
+    <header class="header">
+
+      <div class="header__wrapper">
         
           <p class="logo">
             <a href="index.php">
@@ -38,16 +42,12 @@
           </nav>
 
           <a class="signup" href="#">S'inscrire</a>
-        
-      </header>
-
-     
-     
-    
+      </div>  
+    </header>
    
 
-      <main>
-
+    <main>
+      <div class="main__wrapper">
         <section class="hangs">
 
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -96,15 +96,17 @@
             
 
 
-              <article class="stickerContent">
+              <article class="sticker__list sticker__list--rent">
 
                   <a href="#" class="sticker">
                     
-                    <p class="rentImg"><img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière"><p>
+                    <p class="flexImg">
+                      <img class="imgFlex" src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
+                    <p>
                       
-                    <div class="rentInfo">
-                      <p class="rentName">Auberge de la Cannebière</p>                   
-                      <p class="rentPrice">Nuit à partir de 25<b>€</b></p>
+                    <div class="sticker__data">
+                      <h2 class="sticker__title">Auberge de la Cannebière</h2>                   
+                      <p class="sticker__txt">Nuit à partir de 25<b>€</b></p>
                       <span class="star">
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
@@ -119,13 +121,14 @@
 
                   <a href="#" class="sticker">
                     
-                    <p class=rentImg><img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"></p>
+                    <p class=flexImg>
+                      <img class="imgFlex" src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                    </p>
 
-                    <div class="rentInfo">
-                      <p class="rentName">Hôtel du port</p>
-                      <p class="rentPrice">Nuit à partir de 52<b>€</b></p>
+                    <div class="sticker__data">
+                      <h2 class="sticker__title">Hôtel du port</h2>
+                      <p class="sticker__txt">Nuit à partir de 52<b>€</b></p>
                       <span class="star">
-                        <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
@@ -139,11 +142,13 @@
 
                   <a href="#" class="sticker">
 
-                    <p class="rentImg"><img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"></p>
+                    <p class="flexImg">
+                      <img class="imgFlex" src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+                    </p>
 
-                    <div class="rentInfo">
-                      <p class=rentName>Hôtel les mouettes</p>
-                      <p class="rentPrice">Nuit à partir de <b>76€</b></p>
+                    <div class="sticker__data">
+                      <h2 class="sticker__title">Hôtel les mouettes</h2>
+                      <p class="sticker__txt">Nuit à partir de <b>76€</b></p>
                       <span class="star">
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
@@ -157,11 +162,13 @@
 
                   <a href="#" class="sticker">
 
-                    <p class="rentImg"><img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel dela la mer"></p>
+                    <p class="flexImg">
+                      <img class="imgFlex" src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel dela la mer">
+                    </p>
 
-                    <div class="rentInfo">
-                      <p class="rentName">Hôtel dela la mer</p>
-                      <p class="rentPrice">Nuit à partir de 46<b>€</b></p>
+                    <div class="sticker__data">
+                      <h2 class="sticker__title">Hôtel dela la mer</h2>
+                      <p class="sticker__txt">Nuit à partir de 46<b>€</b></p>
                       <span class="star">
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
@@ -176,11 +183,13 @@
 
                   <a href="#" class="sticker">
 
-                    <p class="rentImg"><img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"></p>
+                    <p class="flexImg">
+                      <img class="imgFlex" src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                    </p>
 
-                    <div class="rentInfo">
-                      <p class="rentName">Auberge Le Panier</p>
-                      <p class="rentPrice">Nuit à partir de 23<b>€</b></p>
+                    <div class="sticker__data">
+                      <h2 class="sticker__title">Auberge Le Panier</h2>
+                      <p class="sticker__txt">Nuit à partir de 23<b>€</b></p>
                       <span class="star">
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
@@ -195,24 +204,29 @@
 
                   <a href="#" class="sticker">
 
-                    <p class="rentImg"><img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"></p>
+                    <p class="flexImg">
+                      <img class="imgFlex" src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                    </p>
 
-                    <div class="rentInfo">
-                      <p class="rentName">Hôtel chez Amina</p>
-                      <p class="rentPrice">Nuit à partir de 96<b>€</b></p>
+                    <div class="sticker__data">
+                      <h2 class="sticker__title">Hôtel chez Amina</h2>
+                      <p class="sticker__txt">Nuit à partir de 96<b>€</b></p>
                       <span class="star">
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
                         <i class="fas fa-star" style="color :#0065FC;"></i>
-                        <i class="fas fa-star" style="color :#d9d9d9;"></i> 
+                        <i class="fas fa-star" style="color :#0065FC;"></i>
                       </span>
                     </div>
                   
                   </a>
 
               </article>
-            <p class="watchMore"><a href="#">Afficher plus</a></p>
+              
+            <p class="watchMore">
+              <a href="#">Afficher plus</a>
+            </p>
           
           </section>
 
@@ -223,41 +237,17 @@
               <i class="fas fa-chart-line"></i>
             </header>
 
-            <ul>
-              <li>
+            <article class="sticker__list sticker__list--popular">
+
                 <a href="#" class="sticker">
 
-                  
-                      <p class="stickerImg">
-                        <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin">
-                      </p>                 
-                  
-
-                  <div class="stickerInfo">
-                    <p class="popularName">Hôtel le soleil du matin</p>
-                    <p class="popularPrice">Nuit à partir de 128<b>€</b></p>
-                    <span class="star">
-                      <i class="fas fa-star" style="color :#0065FC;"></i>
-                      <i class="fas fa-star" style="color :#0065FC;"></i>
-                      <i class="fas fa-star" style="color :#0065FC;"></i>
-                      <i class="fas fa-star" style="color :#0065FC;"></i>
-                      <i class="fas fa-star" style="color :#d9d9d9;"></i>                
-                    </span>
-                  </div>
-                
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="sticker">
-
-                  <p class="stickerImg">
-                      <img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau. Chambres d'hôtes">                    
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin">
                   </p> 
 
-                  <div class="stickerInfo">
-                    <p class="popularName">Au coeur de l'eau <br>Chambres d'hôtes</p>
-                    <p class="popularPrice">Nuit à partir de 71<b>€</b></p>
+                  <div class="sticker__data">
+                    <h2 class="sticker__title">Hôtel le soleil du matin</h2>
+                    <p class="sticker__txt">Nuit à partir de 128<b>€</b></p>
                     <span class="star">
                       <i class="fas fa-star" style="color :#0065FC;"></i>
                       <i class="fas fa-star" style="color :#0065FC;"></i>
@@ -268,18 +258,16 @@
                   </div>
                 
                 </a>
-              </li>
-
-              <li>
+             
                 <a href="#" class="sticker">
 
-                  <p class="stickerImg">
-                      <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">                    
-                  </p>  
+                  <p class="flexImg">
+                      <img class="imgFlex" src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau. Chambres d'hôtes">                    
+                  </p> 
 
-                  <div class="stickerInfo">
-                    <p class="popularName">Hôtel Tout bleu et blanc</p>
-                    <p class="popularPrice">Nuit à partir de 68<b>€</b></p>
+                  <div class="sticker__data">
+                    <h2 class="sticker__title">Au coeur de l'eau Chambres d'hôtes</h2>
+                    <p class="sticker__txt">Nuit à partir de 71<b>€</b></p>
                     <span class="star">
                       <i class="fas fa-star" style="color :#0065FC;"></i>
                       <i class="fas fa-star" style="color :#0065FC;"></i>
@@ -288,78 +276,109 @@
                       <i class="fas fa-star" style="color :#d9d9d9;"></i>                
                     </span>
                   </div>
+                
                 </a>
-              </li>
               
-            </ul>
 
+              
+                <a href="#" class="sticker">
 
+                  <p class="flexImg">
+                      <img class="imgFlex" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Au coeur de l'eau. Chambres d'hôtes">                    
+                  </p> 
 
+                  <div class="sticker__data">
+                    <h2 class="sticker__title">Hôtel tout bleu tout blanc</h2>
+                    <p class="sticker__txt">Nuit à partir de 68<b>€</b></p>
+                    <span class="star">
+                      <i class="fas fa-star" style="color :#0065FC;"></i>
+                      <i class="fas fa-star" style="color :#0065FC;"></i>
+                      <i class="fas fa-star" style="color :#0065FC;"></i>
+                      <i class="fas fa-star" style="color :#0065FC;"></i>
+                      <i class="fas fa-star" style="color :#d9d9d9;"></i>                
+                    </span>
+                  </div>
+                
+                </a>
+                         
+              
+            </article>
           </section>
 
         
         </div> 
-        <section id="activity" class="headBand">
+        <section id="activity" class="activity">
           <h1>Activités à Marseille</h1>
         
-          <ul>
-        
-        
-            <li class="sticker_content">
-              <a href="#" class="headBandSticker sticker_full"> 
-                <p class="sticker_img"><img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"></p>
-                <p class="sticker_name">Vieux Port</p>
-              </a>
-            </li>
-        
-         
-            <li class="sticker_content">
-              <a href="#" class="headBandSticker sticker_medium">
-                <p class="sticker_img"><img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"></p>
-                <p class="sticker_name">Fort de Pomègues</p>
-              </a>
-        
-        
-              <a href="#" class="headBandSticker sticker_small">
-                <p class="sticker_img"><img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"></p>
-                <p class="sticker_name">Iles du Frioul</p>
-              </a>
-            </li>
-        
-        
-        
-        
-            <li class="sticker_content">
-              <a href="#" class="headBandSticker sticker_full"> 
-                <p class="sticker_img"><img src="img/activites/2_Large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"></p>
-                <p class="sticker_name">Parc National des Calanques</p>
-              </a>
-            </li>
-        
-            <li class="sticker_content">
+          <article class="sticker__list sticker__list--headband">
 
+            <ul>
 
-              <a href="#" class="headBandSticker sticker_small">
-                <p class="sticker_img"><img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Guarde"></p>
-                <p class="sticker_name">Notre-Dame-de-la-Guarde</p>
-              </a>
+              <li>
+                <a href="#" class="sticker sticker__img--full"> 
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                  </p>
+                  <h2 class="sticker__name">Vieux Port</h2>
+                </a>
+              </li>
+          
+            
+              <li>
+                <a href="#" class="sticker sticker__img--medium">
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                  </p>
+                  <h2 class="sticker__name">Fort de Pomègues</h2>
+                </a>
+          
+          
+                <a href="#" class="sticker sticker__img--small">
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+                  </p>
+                  <h2 class="sticker__name">Iles du Frioul</h2>
+                </a>
 
+              </li>
+            
+              
+              <li>
+                <a href="#" class="sticker sticker__img--full"> 
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                  </p>
+                  <h2 class="sticker__name">Vieux Port</h2>
+                </a>
+              </li>
+          
+            
+              <li>
+                <a href="#" class="sticker sticker__img--medium">
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                  </p>
+                  <h2 class="sticker__name">Fort de Pomègues</h2>
+                </a>
+          
+          
+                <a href="#" class="sticker sticker__img--small">
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+                  </p>
+                  <h2 class="sticker__name">Iles du Frioul</h2>
+                </a>
+              </li>
 
-              <a href="#" class="headBandSticker sticker_medium">
-                <p class="sticker_img"><img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"></p>
-                <p class="sticker_name">Parc Longchamps</p>
-              </a>
+            </ul>
         
-        
-            </li>
-        
-          </ul>
+          </article>
         </section>        
-  
-      </main>
+      </div>
+    </main>
 
-    <footer>
-      <div class="footerWrapper">
+    <footer class="footer">
+      <div class="footer__wrapper">
 
 
         <section>
@@ -389,11 +408,6 @@
   
       
     </footer>
-
- 
-
-
-
    
   </body>
 </html>

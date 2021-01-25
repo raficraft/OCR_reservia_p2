@@ -1,22 +1,49 @@
-
-.hangs h1{
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    line-height: 1.5rem;
+.hangs{
+    flex-direction: column;
+    background-color: white;
 }
 
+    
+    /*Portable*/
+    
+    @media screen and (max-width: 767px) {
 
-@media screen and (max-width: 640px){
+        .hangs{
+            padding : 0 1.25rem;
+        }
 
-    .hangs{  padding:  0 1rem;}    
-}
+        .hangs h1{
+            margin-right : 2rem;
+            line-height: 1.5rem;
+        }
 
-
-@media screen and (min-width: 641px){
-
-    .hangs{ 
-        inline-size: 1440px;
-        margin : auto;
+     
+    
     }
+    
+    
+    /*Laptop*/
+    
+    @media screen and (min-width: 768px) and (max-width: 1080px) {
+       
+     
+    }
+    
+    /*Desktop*/
+    
+    @media screen and (min-width: 1081px) {
+    
+   
+    
+    }
+    
+    
+    /*Laptop AND Desktop*/
+    @media screen and (min-width: 768px){
+    
 
-}
+     
+    }
+    
+    
+    /*Fin de base*/

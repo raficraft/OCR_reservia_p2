@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -14,34 +17,21 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video,button {
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-html {scroll-behavior : smooth;}
-
-html, body {  
-  min-width: 100%;
-  min-height: 100%;
-  font-size : 16px;
-  font-family: "Raleway", "Sans serif";
-}
-
 body {
-  line-height: 1;
-  display: flex;
-  flex-direction: column;
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -59,34 +49,7 @@ table {
 	border-spacing: 0;
 }
 
-
-li{    list-style: none;   }
-
 a{
-    text-decoration : none;
-    color : black;
-}
-
-h1{
-    font-size : 1.25em;
-    font-weight: 700;
-    margin-bottom : 1.5rem;
-  }
-
-b{
-  font-weight: bold;;
-}
-
-
-*{ box-sizing: border-box; }
-
-img{
-  max-width: 100%;
-  height: auto;
-}
-
-:root{
-    --blueBasic :rgba(0,101,252,1);
-    --softBlue : rgba(222,235,255,1);
-    --gray : rgba(242,242,242,1);    
+	text-decoration: none;
+	color :black;
 }
