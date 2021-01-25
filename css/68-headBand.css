@@ -1,4 +1,47 @@
+
+.activity{
+    display: flex;
+    flex-direction: column;
+}
+
+.activity .sticker{
+    flex-direction: column;
+}
+
+
+.sticker__list--headband ul{
+    display :flex;
+    flex-direction: column;
+}
+
+.sticker__list--headband ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.activity .flexImg{
+    height: 133px;  
+}
+
+.activity .imgFlex{
+    width: 100%; 
+    height :100%;  
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem; 
+}
+
+.activity .sticker__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 53px;
+}
+
+/*Portable*/
+
 @media screen and (max-width: 767px) {
+
     .activity{
         padding: 2rem 1.5rem;
     }
@@ -6,4 +49,34 @@
     .activity .sticker{
         padding : 0;
     }
+
+
 }
+
+
+/*Laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1081px) {
+
+
+
+}
+
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){
+
+
+ 
+}
+
+
+/*Fin de base*/
+
