@@ -1,6 +1,12 @@
+/*
+    DIV .info
+            I
+            P
+*/
 
-.info{
-    display : flex;  
+
+
+.info{ 
     justify-content: flex-start;
     align-items: center;  
   }
@@ -13,7 +19,6 @@
     font-size: 0.75rem;
     color : var(--blueBasic);  
     border : 1px solid var(--gray);
-    display : flex;
     flex-direction : row;
     flex-wrap : nowrap;
     justify-content : center;
@@ -31,6 +36,3 @@
   }
 
 }
-
-/**Fin de INFO**/
-

@@ -1,3 +1,13 @@
+/*
+    DIV .offers
+        SECTION #location .rent
+            HEADER .headerRent
+            ARTICLE .sticker__list .sticker__list--rent
+                A .sticker # Voir section suivante #
+            P .watchMore
+        SECTION .popular
+*/
+
 .offers h1{
     margin-bottom: 2rem;
 }
@@ -5,22 +15,18 @@
     font-size : 1.5rem;
 }
 
-
 /*Portable*/
 
 @media screen and (max-width: 767px) {
     .offers{
-
     flex-direction: column-reverse;
     }
 }
-
 
 /*Laptop*/
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
     .offers{
-
         flex-direction: column-reverse;
         }
     }
@@ -32,4 +38,3 @@
         justify-content: space-between;
     }
 }
-

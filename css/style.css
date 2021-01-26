@@ -1,0 +1,1221 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+	color :black;
+}
+
+/*Les bases du projet sont posées dans cette partie 
+de la feuille des styles.
+Les noeuds "primaire et secondaire" sont dimensionnés
+et agencé ici.
+*/
+
+
+:root{
+    --blueBasic : #0065FC;
+    --softBlue : #DEEBFF;
+    --gray : #f2f2f2; 
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+html{
+    
+    scroll-behavior: smooth;
+}
+
+/*Repère vertical et horizontal.
+Permet de contrôler les alignements.
+NB:Ecrire une fonction SASS, 
+réflechir à une grille de fond et|ou 
+en sur-impression.
+Outil JS dans le coin inférieure 
+de l'écran.
+*/
+
+body:after{
+    position: fixed;
+    left : 1.25rem;
+    content : '';
+    width: 1px;
+    height : 100%;
+    background-color: red;
+}
+body:before{
+    position: fixed;
+    bottom : 160px;
+    content : '';
+    width: 100%;
+    height : 1px;
+    background-color: red;
+}
+
+/**/
+
+body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 1.375rem;
+    font-weight : 700;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+h2{font-weight: bold;}
+
+.header,main,.footer{
+    width : 100%;
+}
+
+
+.header{ 
+    margin-bottom : 1.5rem;
+}
+.header__wrapper{
+    background-color: white;
+}
+main{
+    margin-top: 1.5rem;
+    margin-bottom : 2rem;
+}
+
+.rent,.popular{
+    flex-direction: column;
+    background-color: var(--gray);
+}
+
+
+
+
+/*Tous les elements déclarer en display : flex*/
+
+.header,.header__wrapper,nav,.nav,.info,
+.info i,.hangs,.search,.search i:nth-child(1),
+.searchSubmit,.filter,.filter UL,.filter I,
+.filter LI A,.offers,.sticker,.sticker__data,.star,
+.popular .sticker__txt,.headerPopular,.activity,
+.sticker__list--headband ul,.sticker__list--headband ul li,
+.activity .sticker__data,footer,.footer__wrapper{
+    display :flex;
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .header__wrapper,.main__wrapper{
+    width : 100%
+    } 
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1081px) {
+
+    .header__wrapper, .main__wrapper, .footer__wrapper{
+    inline-size: 1344px;
+    max-width : 1344px;
+    margin: auto;
+    }
+}
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){
+
+    .header,main,.main__wrapper,.hangs,.offers,.rent,.popular,
+    .headband.footer,.footer__wrapper{
+    display: flex;
+    }
+
+    .main__wrapper{
+    flex-direction: column;
+    }
+    
+    .hangs{
+    margin-bottom : 2.5rem;
+    background-color: white;
+    margin-bottom : 2rem;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    }
+    
+    .offers{
+    margin-bottom: 2rem;
+    }  
+
+    .rent,.popular{
+    flex-direction: column;
+    background-color: var(--gray);
+    padding : 2rem 2rem 0;  
+    } 
+    
+    .rent{
+    margin-right : 1.25rem;
+    }
+    .popular{
+    margin-left : 1.25rem;
+    }
+
+    .headband{
+    margin-top: 2rem;
+    background-color: rgb(43, 65, 0);
+    }
+    
+}
+    
+/*
+    HEADER .header
+            DIV .header__wrapper
+                P .logo
+                    A
+                     IMG
+                NAV .nav
+                    A .navLink x2
+                A .signup
+*/
+
+
+.header__wrapper{
+    flex-wrap: wrap; 
+}
+
+.logo img{ height: 2.5rem;  }
+
+nav{
+    justify-content: space-between;
+}
+
+nav .nav__login {
+      color: rgba(0,101,252,1);
+          font-weight: bold;
+}
+
+.signup{ 
+    font-weight: bold;
+     color: var(--blueBasic);
+ }
+
+
+/*Portable*/
+
+@media screen and (max-width: 767px) {
+
+    .logo {       
+        order: 0; 
+        flex : 1 1 auto;        
+        padding-left: 1rem;
+    }
+
+    .signup {
+        order: 1;   
+        flex : 0 1 50%;  
+        text-align: right;
+        align-self: center; 
+        padding-right: 1rem;
+    }
+
+    .nav {
+        order: 2;     
+        justify-content: space-around;
+        align-content: center;
+        width: 100%; 
+        margin-top: 2rem;        
+    }
+
+    .navLink{         
+        flex : 0 1 auto;
+        width : 100%;
+        padding-bottom: 1rem;
+        text-align: center;
+        border-bottom: 2px solid var(--gray); 
+    }
+
+    .navLink[data-active="true"]{
+        border-bottom: 2px solid var(--blueBasic);
+        color : var(--blueBasic);
+        font-weight: 500;
+    }
+
+    .navLink[data-active="false"]:hover{
+        border-bottom: 2px solid var(--blueBasic);
+        color : var(--blueBasic);
+        font-weight: 500;
+    }
+
+}   
+  
+  /*Laptop AND Desktop*/
+  @media screen and (min-width: 768px){
+
+    .header{          
+        align-items: flex-end;  
+    }
+
+    .logo{  
+        flex: 1 1 auto; 
+        margin-top: 2.75rem;
+        margin-left : 0.125rem;
+    }
+
+    .navLink, .signup{        
+        margin: 0 0.5rem;
+        padding : 3rem 1.5rem 0.5rem 1.5rem; 
+        font-size: 14px;
+        font-weight: 500;
+    }    
+
+    .navLink[data-active="true"]{
+        border-top : 2px solid var(--blueBasic);
+        color : var(--blueBasic);
+    }
+
+    .navLink[data-active="false"]{
+        border-top : 2px solid transparent;
+    }
+
+    .navLink[data-active="false"]:hover{
+        border-top : 2px solid var(--blueBasic);
+    }
+
+    .signup{
+        border-top : 2px solid transparent;
+        margin-right : 0;
+        font-weight: bold;        
+    }
+   
+}
+
+/*
+    main
+        DIV .main__wrapper
+            SECTION .hangs
+                H1
+                P
+                DIV .search
+                DIV .filter
+                DIV .info
+            DIV .offers
+            SECTION #activity .activity
+*/
+
+.hangs{
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 3rem;
+}
+
+    
+    /*Portable*/
+    
+@media screen and (max-width: 767px) {
+
+    .hangs{
+        padding : 0 1.25rem;
+    }
+
+    .hangs h1{
+        margin-right : 2rem;
+        line-height: 1.5rem;
+    }
+
+}
+   
+
+/*
+    DIV.search
+        I .searchLocation
+        BUTTON .searchSubmit
+            SPAN .btnDesktop
+            I .btnMobil
+*/
+
+
+.search{
+    position : relative;
+    margin : 1.25rem 0 1.5rem 0;        
+}
+
+.searchLocation, .search input, .search{
+     height : 3.25rem;   
+}
+
+.search i:nth-child(1) { 
+    justify-content : center;
+    align-items : center;   
+    width : 3.25em;    
+    background-color : var(--gray);
+    border-top-left-radius : 1em 1em;
+    border-bottom-left-radius : 1em 1em;
+    font-size : 1rem;
+}
+
+.search INPUT{
+    margin : 0;
+    border: 1px solid var(--gray);
+    text-indent: 1rem;
+    font-weight: 700;
+    padding-right : 1.5rem
+}
+
+.search INPUT::placeholder{
+    font-weight: bold;
+    font-size : 1rem;
+    color: black;
+}
+
+.searchSubmit{    
+    align-items: center;
+    justify-content: center;
+    height : calc(3rem+2px);
+    border : none;
+    background-color: var(--blueBasic);
+    color : white;   
+    font-size : 1rem;     
+    font-weight: 500;   
+       
+}
+    
+/*Portable*/
+
+@media screen and (max-width: 767px) {
+
+    .btnDesktop{ 
+        display: none; 
+    }
+
+    .search Input{ 
+        flex : 1;  
+        margin-right : 1.5rem;
+    }
+
+    .searchSubmit { 
+        position : absolute;
+        right : 0;
+        height: 3.25rem;   
+        width : 3.5rem;        
+        border-radius : 1rem; 
+    }
+}    
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){    
+
+    .search Input{ 
+        padding-right : 4rem;
+    }
+
+    .searchSubmit .btnMobil{ 
+        display : none; 
+    }
+
+    .searchSubmit{
+        padding : 0 1.5rem 0 1.5rem;
+        border-top-right-radius : 1em 1em;
+        border-bottom-right-radius : 1em 1em;        
+        background-color: var(--blueBasic);
+    }
+}
+
+
+/*
+    DIV .filter
+        H2
+        UL
+          LI x4
+            I
+            A
+*/
+
+.filter{    
+    padding-left: 0.25rem  
+}
+
+.filter H2{
+    margin-bottom : 0.5rem;   
+    font-weight: 700;
+}
+
+.filter UL{ 
+    justify-content: flex-start;    
+}
+
+.filter UL li{ 
+       
+    position : relative;
+    z-index : 0;    
+    padding-left : 1.25rem;
+    margin-right: 1.5rem;
+    margin-bottom : 1.25rem;
+    height : 2.75em;
+    border-radius : 1.5em;    
+}
+
+.filter I{
+    justify-content : center;
+    align-items : center;    
+    position : absolute;
+    top : 0; 
+    left : -0.25rem;
+    z-index : 5;    
+    width : 2.6em;
+    height : 2.6em;
+    border-radius : 1.5em;
+    font-size: 1.25rem;   
+    color : rgba(0,101,252,1);
+    background-color : var(--softBlue);
+}
+
+.filter LI A{
+    align-items: center;
+    height : 3.25em;
+    margin : 0;
+    padding-left : 2.75em;
+    padding-right : 1em;
+    font-weight: 700;
+    border : 2px solid rgba(217,217,217,1);   
+    border-top-right-radius : 1.5em 1.5em;
+    border-bottom-right-radius : 1.5em 1.5em;    
+}
+
+/*Effets au survol*/
+
+
+.filter ul li:hover > a{
+    background-color: var(--gray);
+    transition :0.5s;
+  }
+  
+  .filter ul li a{
+    transition :0.5s;
+  }
+  
+  .filter ul li:hover i{
+    background-color: var(--blueBasic);
+    color : white;
+    transition :1s;
+  }
+  
+  .filter ul li i{
+    transition :1s;
+  }
+
+
+ @media screen and (min-width: 375px)AND (max-width: 766px) {
+
+    .filter UL LI{
+        margin-right: 0.625rem;
+    }
+
+    .filter LI A{        
+        padding-left : 2rem;
+    }
+
+ }
+
+
+/*Portable*/
+
+@media screen and (max-width: 767px) {
+    .filter{  
+        flex-direction: column;
+        align-items: center;
+    }    
+    .filter h2{
+        align-self: flex-start;
+          flex : 0 1 100%;  
+    }   
+    .filter ul {      
+        flex-wrap: wrap;
+    }  
+
+}
+
+
+/*Laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .filter{  
+        flex-direction: column;
+    }  
+    .filter h2{
+        margin-bottom : 1rem;
+    } 
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1081px) {
+
+    .filter{
+        align-items: center;
+    }
+
+}
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){
+
+    .filter{  
+        margin-left : 8px;
+        margin-bottom : 1.5rem;  
+    }
+    .filter UL{
+        flex-wrap: wrap;
+    }  
+    .filter h2{  
+        margin-right : 2rem;
+    }
+    .filter li{ 
+        margin: 0 1.5rem 0 0; 
+    }
+ 
+}
+
+/*
+    DIV .info
+            I
+            P
+*/
+
+.info{ 
+    justify-content: flex-start;
+    align-items: center;  
+  }
+  
+  .info i{
+    min-height: 1.5rem;
+    min-width : 1.5rem;
+    border-radius: 50%;
+    margin : 0 0.75rem 0 0.25rem;
+    font-size: 0.75rem;
+    color : var(--blueBasic);  
+    border : 1px solid var(--gray);
+    flex-direction : row;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center; 
+  }
+  
+  .info p{
+    line-height: 1.25rem;
+  }  
+
+@media screen and (max-width: 767px) {
+
+  .info{
+    margin-top: 1rem;
+  }
+
+}
+
+/*
+    DIV .offers
+        SECTION #location .rent
+            HEADER .headerRent
+            ARTICLE .sticker__list .sticker__list--rent
+                A .sticker # Voir section suivante #
+            P .watchMore
+        SECTION .popular
+*/
+
+.offers h1{
+    margin-bottom: 2rem;
+}
+.fa-chart-line{
+    font-size : 1.5rem;
+}
+
+/*Portable*/
+
+@media screen and (max-width: 767px) {
+    .offers{
+    flex-direction: column-reverse;
+    }
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    .offers{
+        flex-direction: column-reverse;
+        }
+    }
+
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){
+    .offers{
+        justify-content: space-between;
+    }
+}
+
+/*
+        A .sticker
+            P .flexImg
+                IMG .imgFlex
+            DIV .sticker__data
+                        H2 .sticker__title
+                        P .sticker
+                        SPAN .star
+                                I x5
+*/
+
+.flexImg{
+    overflow: hidden;   
+    display: flex; 
+}
+
+.imgFlex{
+    /* Attribuer une largeur ou une hauteur
+     de 100% en fonction du besoin
+     La hauteur ou largeur fixe doit être attribué à
+     l'élément parent
+    width : 100%;
+    height :100%;  
+    */
+    object-fit: cover;
+}
+
+
+.sticker{
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+    box-shadow :0px 0px 9px -3px #686868;  
+    transition: 0.5s;
+}
+
+  .sticker:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+  }
+
+
+
+.sticker__txt{
+    font-size : 0.85rem;
+}
+
+.sticker__data{
+    flex-direction: column;
+    padding : 0.5rem  1.25rem;  
+}
+
+.popular .sticker{
+    height: 140px;
+}
+
+.popular .flexImg{
+    max-width: 130px;  
+}
+
+.popular .imgFlex{
+    width: 100%; 
+    height :100%;  
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+}
+
+.popular .sticker__data{
+    padding-right : 3.75rem;
+}
+
+
+.popular .sticker__title{
+    margin-bottom : 0.5rem;
+}
+
+
+.rent .sticker{
+    flex-direction: column;
+}
+
+
+.rent .flexImg{
+    height: 114px;  
+}
+
+.rent .imgFlex{
+    width: 100%; 
+    height :100%;  
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem; 
+}
+
+.rent .sticker__data{
+    height: 79px;
+    justify-content: space-between;
+}
+
+
+.popular .star{
+    align-items: flex-end;
+    padding-bottom: 0.5rem;   
+}
+
+.popular .sticker__txt{
+    flex : 0 1 100%;
+    align-items: flex-start;
+    padding-bottom: 0.5rem;   
+}
+
+.star i{   font-size:0.75rem;  margin-right : 1px;}
+
+.watchMore {   font-weight : bold;}
+
+
+
+/*Portable*/
+
+@media screen and (max-width: 767px) {
+
+    .rent{
+        background-color: white;   
+        padding : 2.5rem 1.25rem 1rem;
+    }
+    .popular .sticker{
+        margin : 0 1.25rem 2rem;
+    }
+
+    .popular .star{
+        align-items: flex-end;    
+    }
+
+    .popular .sticker__data{
+        padding: 0.5rem 1.5rem;
+    }
+
+}
+
+
+/*Laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    
+    .offers{
+
+        flex-direction: column-reverse;
+    }
+    .popular{
+        margin : 0 0 2rem 0;
+        border-radius : 0;
+        padding-bottom : 2rem;
+    }
+       
+    .sticker__list--popular{
+        display : flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+
+    .popular .sticker{
+        width : 32%;
+        margin : 0;
+        flex-direction: column;
+        height : 320px;
+    }
+
+    .popular .flexImg{
+        height : 135px;
+        min-height : 220px;
+        min-width : 100%;  
+    }
+    
+    .popular .imgFlex{
+        width: 100%; 
+        height :100%;  
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .popular .sticker__data{
+        display : flex;
+        padding : 0.5rem 1.2rem 0.5rem 1rem;
+        height : 100px;
+        justify-content: space-between;
+    }
+  
+    .popular .sticker__txt{
+        flex : 0 1 100%;
+        display : flex;
+        align-items: flex-end;
+        padding-bottom: 0.5rem;   
+    }
+    
+    
+}
+
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){
+
+ .sticker__list--rent{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width : 100%;
+}
+
+.rent .sticker{
+    width : 31%;
+}
+ 
+}
+
+/*
+    SECTION .rent
+            HEADER  .headerRent
+                H1
+            ARTICLE .sticker__list sticker__list--rent
+                ### STICKER /Voir la section correspondante ligne :/
+            P .watchMore
+                A
+*/
+
+
+
+/*Portable*/
+
+@media screen and (min-width: 767px){
+
+}
+
+
+/*Laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    
+  
+    .rent{
+        margin : 0 0 2rem 0;
+        border-radius : 0;
+        padding-bottom : 2rem;
+        border-radius: 0;
+        background-color: white;
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1081px) {
+    
+    .rent{
+        width: 65%;
+        max-width: 65%;
+    }
+    
+    .popular{
+        width: 34%;
+        max-width: 34%;
+    }
+
+}
+
+
+/*
+    SECTION .activity
+        ARTICLE .sticker__list--headband
+             UL
+              LI
+               A .sticker .sticker__IMG--full   
+                    P.flexImg                   | 
+                        IMG .imgFlex            | Strucuture répétée
+                    DIV .sticker__data          | Dans chaque balise A .sticker
+                    H2  .sticker__txt           |
+              LI 
+                A .sticker .sticker__IMG--medium
+                A .sticker .sticker__IMG--small
+              LI
+                A .sticker .sticker__IMG--full
+              LI 
+                A .sticker .sticker__IMG--medium2
+                A .sticker .sticker__IMG--small2 
+*/
+
+
+
+.activity{
+    flex-direction: column;
+}
+
+.activity .sticker{
+    flex-direction: column;
+}
+
+
+.sticker__list--headband ul{
+    flex-direction: column;
+}
+
+.sticker__list--headband ul li{
+    flex-direction: column;
+}
+
+
+.activity .flexImg{
+    height: 133px;  
+}
+
+.activity .imgFlex{
+    width: 100%; 
+    height :100%;  
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem; 
+}
+
+.activity .sticker__data{
+    flex-direction: column;
+    justify-content: center;
+    height: 53px;
+}
+
+/*Portable*/
+
+@media screen and (max-width: 767px) {
+
+    .activity{
+        padding: 2rem 1.25rem;
+    }
+
+    .activity .sticker{
+        padding : 0;
+    }
+
+
+}
+
+
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){
+
+    .sticker__list--headband ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sticker__list--headband li{
+        max-width: 22.5%;
+        max-height : 440px;
+        height : 440px;
+        justify-content: space-between;
+    }
+
+    .sticker__list--headband .sticker__data{
+        height : 50px;
+        max-height : 50px;
+    }
+
+    .sticker__list--headband .sticker{
+        padding: 0;   
+        margin : 0;     
+    }
+
+    .sticker__img--full{
+        max-height : 100%;
+        height : 100%;
+    }
+
+    .sticker__img--medium{
+        max-height : 246px;
+        height : 246px;
+    }
+    .sticker__img--medium .flexImg{
+        max-height : 196px;
+        height : 196px;
+    }
+
+    .sticker__img--medium2{
+        max-height : 210px;
+        height : 210px;
+    }
+    .sticker__img--medium2 .flexImg{
+        max-height : 160px;
+        height : 160px;
+    }
+
+
+    .sticker__img--small{
+        max-height : 170px;
+        height : 170px;
+    }
+
+    .sticker__img--small2{
+        max-height : 200px;
+        height : 200px;
+    }
+    .sticker__img--small2 .flexImg{
+        max-height : 150px;
+        height : 150px;
+    }
+
+    .sticker__img--full .flexImg{
+        max-height : 100%;
+        height : 100%;
+    }
+ 
+}
+
+/* 
+    FOOTER
+        .footer__wrapper
+                    SECTION x 3
+                          UL
+                           LI
+                            A
+*/
+
+.footer{
+    display: flex;
+    background-color: var(--gray);    
+    padding-top : 2rem
+}
+
+.footer__wrapper{
+    flex-direction: column;
+}
+
+.footer SECTION{
+    margin-bottom: 2rem;
+    
+}
+
+.footer li{
+    margin : 1rem 0 1rem 0;
+}
+
+.footer A:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .footer{
+        padding : 2rem 1.5rem 0;
+    }
+
+}
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px){
+
+    .footer__wrapper{
+        width : 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__wrapper SECTION{
+        display : flex;
+        flex-direction: column;
+        width :30%;
+    }
+ 
+}
+
+/*Dernier ajustements*/
+
+/*Laptop*/
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .header,.hangs,.rent,.activity,footer{
+        padding-left : 1.5rem; 
+        padding-right : 1.5rem; 
+    }
+
+    .sticker__list--popular .sticker:nth-child(1) .sticker__txt,
+    .sticker__list--popular .sticker:nth-child(3) .sticker__txt{
+        padding-top: 1rem;
+    }
+}
+
+/*Ajustement pour résolution entre 768px et 1023px*/
+
+    
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .sticker__list--popular .sticker:nth-child(3) .sticker__txt{
+        padding-top : 0;
+    }
+
+}
+
+
+
+
+
+
+
+    

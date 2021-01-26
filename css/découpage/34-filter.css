@@ -1,4 +1,11 @@
-/*filter*/
+/*
+    DIV .filter
+        H2
+        UL
+          LI x4
+            I
+            A
+*/
 
 .filter{    
     padding-left: 0.25rem  
@@ -12,7 +19,6 @@
 .filter UL{ 
     justify-content: flex-start;    
 }
-
 
 .filter UL li{ 
        
@@ -75,7 +81,7 @@
   }
 
 
-  @media screen and (min-width: 375px)AND (max-width: 766px) {
+ @media screen and (min-width: 375px)AND (max-width: 766px) {
 
     .filter UL LI{
         margin-right: 0.625rem;
@@ -85,7 +91,7 @@
         padding-left : 2rem;
     }
 
-  }
+ }
 
 
 /*Portable*/
@@ -103,27 +109,21 @@
         flex-wrap: wrap;
     }  
 
-
 }
 
 
 /*Laptop*/
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
+
     .filter{  
         flex-direction: column;
     }  
     .filter h2{
         margin-bottom : 1rem;
     } 
-    .filter UL LI:nth-child(1){
-        margin-left: 0.25rem;
-    }
- 
+
 }
-
-
-
 
 /*Desktop*/
 
@@ -132,14 +132,11 @@
     .filter{
         align-items: center;
     }
-   
- 
-}
 
+}
 
 /*Laptop AND Desktop*/
 @media screen and (min-width: 768px){
-
 
     .filter{  
         margin-left : 8px;
@@ -152,10 +149,8 @@
         margin-right : 2rem;
     }
     .filter li{ 
-        margin: 0 0.75rem; 
+        margin: 0 1.5rem 0 0; 
     }
  
 }
 
-
-/*Fin de base*/

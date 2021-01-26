@@ -1,4 +1,8 @@
-/*ELEMENT Structurelle de base*/
+/*Les bases du projet sont posées dans cette partie 
+de la feuille des styles.
+Les noeuds "primaire et secondaire" sont dimensionnés
+et agencé ici.
+*/
 
 
 :root{
@@ -23,9 +27,14 @@ Outil JS dans le coin inférieure
 de l'écran.
 */
 
+html{
+  
+  scroll-behavior: smooth;
+}
+
 body:after{
   position: fixed;
-  left : 335px;
+  left : 1.25rem;
   content : '';
   width: 1px;
   height : 100%;
@@ -33,7 +42,7 @@ body:after{
 }
 body:before{
   position: fixed;
-  top : 63px;
+  bottom : 160px;
   content : '';
   width: 100%;
   height : 1px;
@@ -78,29 +87,20 @@ main{
   background-color: var(--gray);
 }
 
-.footer{
-  margin-top: 2rem;
-}
 
-.footer__wrapper{
-  background-color: violet;
-}
 
-/*Tous les elements déclarer en flexible*/
 
-.hangs,
-.search,.search i:nth-child(1),
-.searchSubmit,.filter,.filter UL,
-.filter I, .filter LI A,.offers{
+/*Tous les elements déclarer en display : flex*/
+
+.header,.header__wrapper,nav,.nav,.info,
+.info i,.hangs,.search,.search i:nth-child(1),
+.searchSubmit,.filter,.filter UL,.filter I,
+.filter LI A,.offers,.sticker,.sticker__data,.star,
+.popular .sticker__txt,.headerPopular,.activity,
+.sticker__list--headband ul,.sticker__list--headband ul li,
+.activity .sticker__data,footer,.footer__wrapper{
   display :flex;
 }
-
-/*Portable*/
-
-@media screen and (max-width: 767px) {
-
-}
-
 
 /*Laptop*/
 
@@ -108,8 +108,7 @@ main{
 
   .header__wrapper,.main__wrapper{
     width : 100%
-  }
- 
+  } 
 }
 
 /*Desktop*/
@@ -121,14 +120,13 @@ main{
     max-width : 1344px;
     margin: auto;
   }
-
 }
-
 
 /*Laptop AND Desktop*/
 @media screen and (min-width: 768px){
 
-  .header,main,.main__wrapper,.hangs,.offers,.rent,.popular,.headband.footer,.footer__wrapper{
+  .header,main,.main__wrapper,.hangs,.offers,.rent,.popular,
+  .headband.footer,.footer__wrapper{
     display: flex;
   }
 
@@ -161,49 +159,10 @@ main{
     margin-left : 1.25rem;
   }
 
-
-
   .headband{
     margin-top: 2rem;
     background-color: rgb(43, 65, 0);
   }
- 
-}
-
-
-/*Fin de base*/
-
-
-
-
-
-/*Portable*/
-
-@media screen and (max-width: 767px) {
-
-}
-
-
-/*Laptop*/
-
-@media screen and (min-width: 768px) and (max-width: 1080px) {
-
-
-}
-
-/*Desktop*/
-
-@media screen and (min-width: 1081px) {
-
-
-
-}
-
-
-/*Laptop AND Desktop*/
-@media screen and (min-width: 768px){
-
-
  
 }
 

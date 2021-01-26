@@ -1,3 +1,13 @@
+/*
+        A .sticker
+            P .flexImg
+                IMG .imgFlex
+            DIV .sticker__data
+                        H2 .sticker__title
+                        P .sticker
+                        SPAN .star
+                                I x5
+*/
 
 .flexImg{
     overflow: hidden;   
@@ -17,7 +27,6 @@
 
 
 .sticker{
-    display: flex;
     border-radius: 1rem;
     background-color: white;
     padding: 0.25rem;
@@ -38,7 +47,6 @@
 }
 
 .sticker__data{
-    display: flex;
     flex-direction: column;
     padding : 0.5rem  1.25rem;  
 }
@@ -89,16 +97,14 @@
     justify-content: space-between;
 }
 
+
 .popular .star{
-    flex : 0 1 100%;
-    display : flex;
     align-items: flex-end;
     padding-bottom: 0.5rem;   
 }
 
 .popular .sticker__txt{
     flex : 0 1 100%;
-    display : flex;
     align-items: flex-start;
     padding-bottom: 0.5rem;   
 }
@@ -115,10 +121,10 @@
 
 .rent{
      background-color: white;   
-     padding : 1.5rem;
+     padding : 2.5rem 1.25rem 1rem;
 }
 .popular .sticker{
-    margin : 0 1.5rem 2rem;
+    margin : 0 1.25rem 2rem;
 }
 
 .popular .star{
@@ -126,8 +132,10 @@
 }
 
 .popular .sticker__data{
-    padding : 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
+
+
 
 
 
@@ -185,6 +193,12 @@
         justify-content: space-between;
     }
   
+    .popular .sticker__txt{
+        flex : 0 1 100%;
+        display : flex;
+        align-items: flex-end;
+        padding-bottom: 0.5rem;   
+    }
     
     
 }
