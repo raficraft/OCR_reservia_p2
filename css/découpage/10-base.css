@@ -150,6 +150,7 @@ main{
     flex-direction: column;
     background-color: var(--gray);
     padding : 2rem 2rem 0;  
+    
   } 
   
   .rent{
