@@ -91,6 +91,10 @@
 /*Laptop AND Desktop*/
 @media screen and (min-width: 768px){
 
+    .activity h1{
+        margin-bottom: 2rem;
+    }
+
     .sticker__list--headband ul{
         flex-direction: row;
         justify-content: space-between;
@@ -118,8 +122,8 @@
     }
 
     .sticker__img--medium{
-        max-height : 246px;
-        height : 246px;
+        max-height : 234px;
+        height : 234px;
     }
     .sticker__img--medium .flexImg{
         max-height : 196px;
@@ -127,8 +131,8 @@
     }
 
     .sticker__img--medium2{
-        max-height : 210px;
-        height : 210px;
+        max-height : 200px;
+        height : 200px;
     }
     .sticker__img--medium2 .flexImg{
         max-height : 160px;

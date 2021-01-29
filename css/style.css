@@ -62,171 +62,183 @@ et agencé ici.
 
 
 :root{
-    --blueBasic : #0065FC;
-    --softBlue : #DEEBFF;
-    --gray : #f2f2f2; 
-    
-}
-
-*{
-    box-sizing: border-box;
-}
-
-
-
-
-
-html{
-    
-    scroll-behavior: smooth;
-}
-
-/*Repère vertical et horizontal.
-Permet de contrôler les alignements.
-NB:Ecrire une fonction SASS, 
-réflechir à une grille de fond et|ou 
-en sur-impression.
-Outil JS dans le coin inférieure 
-de l'écran.
-*/
-
-body:after{
-    position: fixed;
-    left : 1.25rem;
-    content : '';
-    width: 1px;
-    height : 100%;
-    background-color: red;
-}
-body:before{
-    position: fixed;
-    bottom : 160px;
-    content : '';
-    width: 100%;
-    height : 1px;
-    background-color: red;
-}
-
-/**/
-
-body{
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-h1{
-    font-size: 1.375rem;
-    font-weight : 700;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-
-h2{font-weight: bold;}
-
-.header,main,.footer{
-    width : 100%;
-}
-
-
-.header{ 
-    margin-bottom : 1.5rem;
-}
-.header__wrapper{
-    background-color: white;
-}
-main{
-    margin-top: 1.5rem;
-    margin-bottom : 2rem;
-}
-
-.rent,.popular{
-    flex-direction: column;
-    background-color: var(--gray);
-}
-
-
-
-
-/*Tous les elements déclarer en display : flex*/
-
-.header,.header__wrapper,nav,.nav,.info,
-.info i,.hangs,.search,.search i:nth-child(1),
-.searchSubmit,.filter,.filter UL,.filter I,
-.filter LI A,.offers,.sticker,.sticker__data,.star,
-.popular .sticker__txt,.headerPopular,.activity,
-.sticker__list--headband ul,.sticker__list--headband ul li,
-.activity .sticker__data,footer,.footer__wrapper{
-    display :flex;
-}
-
-/*Laptop*/
-
-@media screen and (min-width: 768px) and (max-width: 1080px) {
-
-    .header__wrapper,.main__wrapper{
-    width : 100%
-    } 
-}
-
-/*Desktop*/
-
-@media screen and (min-width: 1081px) {
-
-    .header__wrapper, .main__wrapper, .footer__wrapper{
-    inline-size: 1344px;
-    max-width : 1344px;
-    margin: auto;
-    }
-}
-
-/*Laptop AND Desktop*/
-@media screen and (min-width: 768px){
-
-    .header,main,.main__wrapper,.hangs,.offers,.rent,.popular,
-    .headband.footer,.footer__wrapper{
-    display: flex;
-    }
-
-    .main__wrapper{
-    flex-direction: column;
-    }
-    
-    .hangs{
-    margin-bottom : 2.5rem;
-    background-color: white;
-    margin-bottom : 2rem;
-    flex-direction: column;
-    padding: 0 0.5rem;
-    }
-    
-    .offers{
-    margin-bottom: 2rem;
-    }  
-
-    .rent,.popular{
-    flex-direction: column;
-    background-color: var(--gray);
-    padding : 2rem 2rem 0;  
-    } 
-    
-    .rent{
-    margin-right : 1.25rem;
-    }
-    .popular{
-    margin-left : 1.25rem;
-    }
-
-    .headband{
-    margin-top: 2rem;
-    background-color: rgb(43, 65, 0);
-    }
-    
-}
-    
-/*
+	--blueBasic : #0065FC;
+	--softBlue : #DEEBFF;
+	--gray : #f2f2f2; 
+	
+	}
+	
+	*{
+	  box-sizing: border-box;
+	}
+	
+	
+	
+	
+	html{
+	  
+	  scroll-behavior: smooth;
+	}
+	/*Repère vertical et horizontal.
+	Permet de contrôler les alignements.
+	NB:Ecrire une fonction SASS, 
+	réflechir à une grille de fond et|ou 
+	en sur-impression.
+	Outil JS dans le coin inférieure 
+	de l'écran.
+	
+	
+	body:after{
+	  position: fixed;
+	  left : 1.25rem;
+	  content : '';
+	  width: 1px;
+	  height : 100%;
+	  background-color: red;
+	}
+	body:before{
+	  position: fixed;
+	  top : 60px;
+	  content : '';
+	  width: 100%;
+	  height : 1px;
+	  background-color: red;
+	}
+	*/
+	body{
+	  font-size: 16px;
+	  font-family: 'Raleway', sans-serif;
+	  display: flex;
+	  flex-direction: column;
+	
+	}
+	
+	h1{
+	  font-size: 1.375rem;
+	  font-weight : 700;
+	  display: flex;
+	  flex-wrap: wrap;
+	  margin-bottom: 1rem;
+	}
+	
+	h2{font-weight: bold;}
+	
+	.header,main,.footer{
+	  width : 100%;
+	}
+	
+	
+	.header{ 
+	  margin-bottom : 1.5rem;
+	}
+	.header__wrapper{
+	  background-color: white;
+	}
+	main{
+	  margin-top: 1.5rem;
+	  margin-bottom : 2rem;
+	}
+	
+	.rent,.popular{
+	  flex-direction: column;
+	  background-color: var(--gray);
+	}
+	
+	
+	
+	
+	/*Tous les elements déclarer en display : flex*/
+	
+	.header,.header__wrapper,nav,.nav,.info,
+	.info i,.hangs,.search,.search i:nth-child(1),
+	.searchSubmit,.filter,.filter UL,.filter I,
+	.filter LI A,.offers,.sticker,.sticker__data,.star,
+	.popular .sticker__txt,.headerPopular,.activity,
+	.sticker__list--headband ul,.sticker__list--headband ul li,
+	.activity .sticker__data,footer,.footer__wrapper{
+	  display :flex;
+	}
+	
+	/*Laptop*/
+	
+	@media screen and (min-width: 768px) and (max-width: 1080px) {
+	
+	  .header__wrapper,.main__wrapper{
+		width : 100%
+	  } 
+	}
+	
+	/*Desktop*/
+	
+	@media screen and (min-width: 1081px) {
+	
+	  .header__wrapper, .main__wrapper, .footer__wrapper{
+		inline-size: 1344px;
+		max-width : 1344px;
+		margin: auto;
+	  }
+	}
+	
+	/*Laptop AND Desktop*/
+	@media screen and (min-width: 768px){
+	
+	  .header,main,.main__wrapper,.hangs,.offers,.rent,.popular,
+	  .headband.footer,.footer__wrapper{
+		display: flex;
+	  }
+	
+	  main {
+		margin-bottom:4rem;
+	  }
+	
+	  .main__wrapper{
+		flex-direction: column;
+	  }
+	  
+	  .hangs{
+		margin-bottom : 2.5rem;
+		background-color: white;
+		margin-bottom : 2rem;
+		flex-direction: column;
+		padding: 0 0.5rem;
+	  }
+	  
+	  .offers{
+		margin-bottom: 2rem;
+	  }  
+	
+	  .rent,.popular{
+		flex-direction: column;
+		background-color: var(--gray);
+		padding : 2.5rem 2rem 0;  
+		
+	  } 
+	  
+	  .rent{
+		margin-right : 1.25rem;
+	  }
+	  .popular{
+		margin-left : 1.25rem;
+	  }
+	
+	  .headband{
+		margin-top: 2rem;
+		background-color: rgb(43, 65, 0);
+	  }
+	 
+	}
+	
+	/*Desktop*/
+	@media screen and (min-width: 1440px){
+	
+	
+	
+	  .offers{
+		padding-bottom : 1.5rem;
+	  }
+	
+	}
+	/*
     HEADER .header
             DIV .header__wrapper
                 P .logo
@@ -347,8 +359,8 @@ nav .nav__login {
     }
    
 }
-
-/*
+	
+	/*
     main
         DIV .main__wrapper
             SECTION .hangs
@@ -383,7 +395,6 @@ nav .nav__login {
 
 }
    
-
 /*
     DIV.search
         I .searchLocation
@@ -478,7 +489,7 @@ nav .nav__login {
         background-color: var(--blueBasic);
     }
 }
-
+	
 
 /*
     DIV .filter
@@ -642,6 +653,8 @@ nav .nav__login {
             P
 */
 
+
+
 .info{ 
     justify-content: flex-start;
     align-items: center;  
@@ -734,7 +747,7 @@ nav .nav__login {
     /* Attribuer une largeur ou une hauteur
      de 100% en fonction du besoin
      La hauteur ou largeur fixe doit être attribué à
-     l'élément parent
+     l'élément parrent
     width : 100%;
     height :100%;  
     */
@@ -768,11 +781,11 @@ nav .nav__login {
 }
 
 .popular .sticker{
-    height: 140px;
+    height: 145px;
 }
 
 .popular .flexImg{
-    max-width: 130px;  
+    max-width: 126px;  
 }
 
 .popular .imgFlex{
@@ -835,82 +848,89 @@ nav .nav__login {
 
 @media screen and (max-width: 767px) {
 
-    .rent{
-        background-color: white;   
-        padding : 2.5rem 1.25rem 1rem;
-    }
-    .popular .sticker{
-        margin : 0 1.25rem 2rem;
-    }
-
-    .popular .star{
-        align-items: flex-end;    
-    }
-
-    .popular .sticker__data{
-        padding: 0.5rem 1.5rem;
-    }
-
+.rent{
+     background-color: white;   
+     padding : 2.5rem 1.25rem 1rem;
+}
+.popular .sticker{
+    margin : 0 1.25rem 2rem;
 }
 
+.popular .star{
+    align-items: flex-end;    
+}
+
+.popular .sticker__data{
+    padding: 0.5rem 1.5rem;
+}
+
+}
 
 /*Laptop*/
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
     
-    .offers{
+.offers{
 
-        flex-direction: column-reverse;
-    }
-    .popular{
-        margin : 0 0 2rem 0;
-        border-radius : 0;
-        padding-bottom : 2rem;
-    }
-       
-    .sticker__list--popular{
-        display : flex;
-        flex-direction: row;
-        justify-content: space-between;
-       
-    }
+	flex-direction: column-reverse;
+}
+.popular{
+	margin : 0 0 2rem 0;
+	border-radius : 0;
+	padding-bottom : 2rem;
+}
+	
+.sticker__list--popular{
+	display : flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
 
-    .popular .sticker{
-        width : 32%;
-        margin : 0;
-        flex-direction: column;
-        height : 320px;
-    }
+.popular .sticker{
+	width : 32%;
+	margin : 0;
+	flex-direction: column;
+	height : 320px;
+}
 
-    .popular .flexImg{
-        height : 135px;
-        min-height : 220px;
-        min-width : 100%;  
-    }
+.popular .flexImg{
+	height : 135px;
+	min-height : 220px;
+	min-width : 100%;  
+}
+
+.popular .imgFlex{
+	width: 100%; 
+	height :100%;  
+	border-top-left-radius: 0.75rem;
+	border-top-right-radius: 0.75rem;
+	border-bottom-left-radius: 0;
+}
+
+.popular .sticker__data{
+	display : flex;
+	padding : 0.5rem 1.2rem 0.5rem 1rem;
+	height : 100px;
+	justify-content: space-between;
+}
+
+.popular .sticker__txt{
+	flex : 0 1 100%;
+	display : flex;
+	align-items: flex-end;
+	padding-bottom: 0.5rem;   
+}
     
-    .popular .imgFlex{
-        width: 100%; 
-        height :100%;  
-        border-top-left-radius: 0.75rem;
-        border-top-right-radius: 0.75rem;
-        border-bottom-left-radius: 0;
-    }
+    
+}
 
-    .popular .sticker__data{
-        display : flex;
-        padding : 0.5rem 1.2rem 0.5rem 1rem;
-        height : 100px;
-        justify-content: space-between;
-    }
-  
-    .popular .sticker__txt{
-        flex : 0 1 100%;
-        display : flex;
-        align-items: flex-end;
-        padding-bottom: 0.5rem;   
-    }
-    
-    
+/*Desktop*/
+
+@media screen and (min-width: 1081px) {
+
+
+
 }
 
 
@@ -930,6 +950,9 @@ nav .nav__login {
 }
  
 }
+
+
+/*Fin de sticker*/
 
 /*
     SECTION .rent
@@ -979,6 +1002,55 @@ nav .nav__login {
     }
 
 }
+
+
+/*Laptop AND Desktop*/
+@media screen and (min-width: 1081px) {
+    .rent,.popular{
+        border-radius: 1.5rem;    
+    } 
+}
+
+/*
+    SECTION .popular
+            HEADER  .headerPopular
+                H1
+            ARTICLE .sticker__list sticker__list--popular
+                ### STICKER /Voir la section correspondante ligne :/
+*/
+
+
+.headerPopular{
+    justify-content: space-between;
+    padding : 2rem 1.25rem 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    
+    .offers{
+
+        flex-direction: column-reverse;
+    }
+    .popular{
+        margin : 0 0 2rem 0;
+        border-radius : 0;
+        padding-bottom : 2rem;
+        border-radius: 0;
+    }
+    .headerPopular{
+        padding : 0;
+    }
+}
+
+@media screen  and (min-width: 1080px) {
+
+    .headerPopular{
+        padding : 0;
+    }
+}
+
+/*Fin de popular*/
+
 
 
 /*
@@ -1054,9 +1126,28 @@ nav .nav__login {
 }
 
 
+/*Laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1081px) {
+
+
+
+}
+
 
 /*Laptop AND Desktop*/
 @media screen and (min-width: 768px){
+
+    .activity h1{
+        margin-bottom: 2rem;
+    }
 
     .sticker__list--headband ul{
         flex-direction: row;
@@ -1085,8 +1176,8 @@ nav .nav__login {
     }
 
     .sticker__img--medium{
-        max-height : 246px;
-        height : 246px;
+        max-height : 234px;
+        height : 234px;
     }
     .sticker__img--medium .flexImg{
         max-height : 196px;
@@ -1094,8 +1185,8 @@ nav .nav__login {
     }
 
     .sticker__img--medium2{
-        max-height : 210px;
-        height : 210px;
+        max-height : 200px;
+        height : 200px;
     }
     .sticker__img--medium2 .flexImg{
         max-height : 160px;
@@ -1123,6 +1214,8 @@ nav .nav__login {
     }
  
 }
+
+
 
 /* 
     FOOTER
@@ -1165,6 +1258,8 @@ nav .nav__login {
 
 }
 
+
+
 /*Laptop AND Desktop*/
 @media screen and (min-width: 768px){
 
@@ -1181,12 +1276,6 @@ nav .nav__login {
     }
  
 }
-
-/*Dernier ajustements*/
-
-/*Laptop*/
-
-
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
 
@@ -1215,7 +1304,4 @@ nav .nav__login {
 
 
 
-
-
-
-    
+	
