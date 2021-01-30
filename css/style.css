@@ -1186,8 +1186,9 @@ nav .nav__login {
 
     .sticker__img--medium2{
         max-height : 200px;
-        height : 200px;
+        height : 200px;        
     }
+  
     .sticker__img--medium2 .flexImg{
         max-height : 160px;
         height : 160px;
