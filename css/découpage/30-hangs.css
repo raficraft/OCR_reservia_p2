@@ -11,25 +11,21 @@
             SECTION #activity .activity
 */
 
-.hangs{
-    flex-direction: column;
-    background-color: white;
-    margin-bottom: 3rem;
+.hangs {
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 3rem;
 }
 
-    
-    /*Portable*/
-    
+/*Portable*/
+
 @media screen and (max-width: 767px) {
+  .hangs {
+    padding: 0 1.25rem;
+  }
 
-    .hangs{
-        padding : 0 1.25rem;
-    }
-
-    .hangs h1{
-        margin-right : 2rem;
-        line-height: 1.5rem;
-    }
-
+  .hangs h1 {
+    margin-right: 2rem;
+    line-height: 1.5rem;
+  }
 }
-   

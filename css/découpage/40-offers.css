@@ -8,33 +8,32 @@
         SECTION .popular
 */
 
-.offers h1{
-    margin-bottom: 2rem;
+.offers h1 {
+  margin-bottom: 2rem;
 }
-.fa-chart-line{
-    font-size : 1.5rem;
+.fa-chart-line {
+  font-size: 1.5rem;
 }
 
 /*Portable*/
 
 @media screen and (max-width: 767px) {
-    .offers{
+  .offers {
     flex-direction: column-reverse;
-    }
+  }
 }
 
 /*Laptop*/
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-    .offers{
-        flex-direction: column-reverse;
-        }
-    }
-
+  .offers {
+    flex-direction: column-reverse;
+  }
+}
 
 /*Laptop AND Desktop*/
-@media screen and (min-width: 768px){
-    .offers{
-        justify-content: space-between;
-    }
+@media screen and (min-width: 768px) {
+  .offers {
+    justify-content: space-between;
+  }
 }

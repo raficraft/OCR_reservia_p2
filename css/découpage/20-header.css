@@ -9,113 +9,112 @@
                 A .signup
 */
 
-
-.header__wrapper{
-    flex-wrap: wrap; 
+.header__wrapper {
+  flex-wrap: wrap;
+  width :100%;
 }
 
-.logo img{ height: 2.5rem;  }
+.logo img {
+  height: 2.5rem;
+}
 
-nav{
-    justify-content: space-between;
+nav {
+  justify-content: space-between;
 }
 
 nav .nav__login {
-      color: rgba(0,101,252,1);
-          font-weight: bold;
+  color: rgba(0, 101, 252, 1);
+  font-weight: bold;
 }
 
-.signup{ 
-    font-weight: bold;
-     color: var(--blueBasic);
- }
-
+.signup {
+  font-weight: bold;
+  color: var(--blueBasic);
+}
 
 /*Portable*/
 
 @media screen and (max-width: 767px) {
+  .logo {
+    flex: 1 1 auto;
+    order: 0;
+    padding-left: 1rem;
+  }
 
-    .logo {       
-        order: 0; 
-        flex : 1 1 auto;        
-        padding-left: 1rem;
-    }
+  .signup {
+    flex: 0 1 50%;
+    order: 1;
+    align-self: center;
+    text-align: right;
+    padding-right: 1rem;
+  }
 
-    .signup {
-        order: 1;   
-        flex : 0 1 50%;  
-        text-align: right;
-        align-self: center; 
-        padding-right: 1rem;
-    }
+  .nav {
+    justify-content: space-around;
+    align-content: center;
+    order: 2;
+    width: 100%;
+    margin-top: 2rem;
+  }
 
-    .nav {
-        order: 2;     
-        justify-content: space-around;
-        align-content: center;
-        width: 100%; 
-        margin-top: 2rem;        
-    }
+  .navLink {
+    flex: 0 1 auto;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid var(--gray);
+    transition-duration: .5s;
+  }
 
-    .navLink{         
-        flex : 0 1 auto;
-        width : 100%;
-        padding-bottom: 1rem;
-        text-align: center;
-        border-bottom: 2px solid var(--gray); 
-    }
+  .navLink[data-active="true"] {
+    border-bottom: 2px solid var(--blueBasic);
+    color: var(--blueBasic);
+    font-weight: 500;
+  }
 
-    .navLink[data-active="true"]{
-        border-bottom: 2px solid var(--blueBasic);
-        color : var(--blueBasic);
-        font-weight: 500;
-    }
+  .navLink[data-active="false"]:hover {
+    border-bottom: 2px solid var(--blueBasic);
+    color: var(--blueBasic);
+    font-weight: 500;
+  }
+}
 
-    .navLink[data-active="false"]:hover{
-        border-bottom: 2px solid var(--blueBasic);
-        color : var(--blueBasic);
-        font-weight: 500;
-    }
+/*Laptop AND Desktop*/
+@media screen and (min-width: 768px) {
+  .header {
+    align-items: flex-end;
+  }
 
-}   
-  
-  /*Laptop AND Desktop*/
-  @media screen and (min-width: 768px){
+  .logo {
+    flex: 1 1 auto;
+    margin-top: 2.75rem;
+    margin-left: 0.125rem;
+  }
 
-    .header{          
-        align-items: flex-end;  
-    }
+  .navLink,
+  .signup {
+    margin: 0 0.5rem;
+    padding: 3rem 1.5rem 0.5rem 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-    .logo{  
-        flex: 1 1 auto; 
-        margin-top: 2.75rem;
-        margin-left : 0.125rem;
-    }
+  .navLink[data-active="true"] {
+    border-top: 2px solid var(--blueBasic);
+    color: var(--blueBasic);
+  }
 
-    .navLink, .signup{        
-        margin: 0 0.5rem;
-        padding : 3rem 1.5rem 0.5rem 1.5rem; 
-        font-size: 14px;
-        font-weight: 500;
-    }    
+  .navLink[data-active="false"] {
+    border-top: 2px solid transparent;
+  }
 
-    .navLink[data-active="true"]{
-        border-top : 2px solid var(--blueBasic);
-        color : var(--blueBasic);
-    }
+  .navLink[data-active="false"]:hover {
+    border-top: 2px solid var(--blueBasic);
+  }
 
-    .navLink[data-active="false"]{
-        border-top : 2px solid transparent;
-    }
-
-    .navLink[data-active="false"]:hover{
-        border-top : 2px solid var(--blueBasic);
-    }
-
-    .signup{
-        border-top : 2px solid transparent;
-        margin-right : 0;
-        font-weight: bold;        
-    }
-   
+  .signup {
+    border-top: 2px solid transparent;
+    margin-right: 0;
+    font-weight: bold;
+  }
 }

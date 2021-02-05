@@ -4,20 +4,17 @@ Les noeuds "primaire et secondaire" sont dimensionnés
 et agencé ici.
 */
 
-
-:root{
---blueBasic : #0065FC;
---softBlue : #DEEBFF;
---gray : #f2f2f2; 
-
+:root {
+  --blueBasic: #0065fc;
+  --softBlue: #deebff;
+  --gray: #f2f2f2;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-html{
-  
+html {
   scroll-behavior: smooth;
 }
 /*Repère vertical et horizontal.
@@ -46,139 +43,159 @@ body:before{
   background-color: red;
 }
 */
-body{
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+body {
   display: flex;
   flex-direction: column;
-
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
 }
 
-h1{
-  font-size: 1.375rem;
-  font-weight : 700;
+h1 {
   display: flex;
   flex-wrap: wrap;
+  font-size: 1.375rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
-h2{font-weight: bold;}
-
-.header,main,.footer{
-  width : 100%;
+h2 {
+  font-weight: bold;
 }
 
-
-.header{ 
-  margin-bottom : 1.5rem;
+.header,
+main,
+.footer {
+  width: 100%;
 }
-.header__wrapper{
+
+.header {
+  margin-bottom: 1.5rem;
+}
+.header__wrapper {
   background-color: white;
 }
-main{
+main {
   margin-top: 1.5rem;
-  margin-bottom : 2rem;
+  margin-bottom: 2rem;
 }
 
-.rent,.popular{
+.rent,
+.popular {
   flex-direction: column;
   background-color: var(--gray);
 }
 
-
-
-
 /*Tous les elements déclarer en display : flex*/
 
-.header,.header__wrapper,nav,.nav,.info,
-.info i,.hangs,.search,.search i:nth-child(1),
-.searchSubmit,.filter,.filter UL,.filter I,
-.filter LI A,.offers,.sticker,.sticker__data,.star,
-.popular .sticker__txt,.headerPopular,.activity,
-.sticker__list--headband ul,.sticker__list--headband ul li,
-.activity .sticker__data,footer,.footer__wrapper{
-  display :flex;
+.header,
+.header__wrapper,
+nav,
+.nav,
+.info,
+.info i,
+.hangs,
+.search,
+.search i:nth-child(1),
+.searchSubmit,
+.filter,
+.filter UL,
+.filter I,
+.filter LI A,
+.offers,
+.sticker,
+.sticker__data,
+.star,
+.popular .sticker__txt,
+.headerPopular,
+.activity,
+.sticker__list--headband ul,
+.sticker__list--headband ul li,
+.activity .sticker__data,
+footer,
+.footer__wrapper {
+  display: flex;
 }
 
 /*Laptop*/
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-
-  .header__wrapper,.main__wrapper{
-    width : 100%
-  } 
+  .header__wrapper,
+  .main__wrapper {
+    width: 100%;
+  }
 }
 
 /*Desktop*/
 
 @media screen and (min-width: 1081px) {
-
-  .header__wrapper, .main__wrapper, .footer__wrapper{
+  .header__wrapper,
+  .main__wrapper,
+  .footer__wrapper {
     inline-size: 1344px;
-    max-width : 1344px;
+    max-width: 1344px;
     margin: auto;
   }
 }
 
 /*Laptop AND Desktop*/
-@media screen and (min-width: 768px){
-
-  .header,main,.main__wrapper,.hangs,.offers,.rent,.popular,
-  .headband.footer,.footer__wrapper{
+@media screen and (min-width: 768px) {
+  .header,
+  main,
+  .main__wrapper,
+  .hangs,
+  .offers,
+  .rent,
+  .popular,
+  .headband.footer,
+  .footer__wrapper {
     display: flex;
   }
 
   main {
-    margin-bottom:4rem;
+    margin-bottom: 4rem;
   }
 
-  .main__wrapper{
+  .main__wrapper {
     flex-direction: column;
   }
-  
-  .hangs{
-    margin-bottom : 2.5rem;
-    background-color: white;
-    margin-bottom : 2rem;
+
+  .hangs {
     flex-direction: column;
+    margin-bottom: 2.5rem;
+    background-color: white;
+    margin-bottom: 2rem;
     padding: 0 0.5rem;
   }
-  
-  .offers{
-    margin-bottom: 2rem;
-  }  
 
-  .rent,.popular{
+  .offers {
+    margin-bottom: 2rem;
+  }
+
+  .rent,
+  .popular {
     flex-direction: column;
     background-color: var(--gray);
-    padding : 2.5rem 2rem 0;  
-    
-  } 
-  
-  .rent{
-    margin-right : 1.25rem;
-  }
-  .popular{
-    margin-left : 1.25rem;
+    padding: 2.5rem 2rem 0;
   }
 
-  .headband{
+  .rent {
+    margin-right: 1.25rem;
+  }
+  .popular {
+    margin-left: 1.25rem;
+  }
+
+  .headband {
     margin-top: 2rem;
     background-color: rgb(43, 65, 0);
   }
- 
 }
 
 /*Desktop*/
-@media screen and (min-width: 1440px){
-
-
-
-  .offers{
-    padding-bottom : 1.5rem;
+@media screen and (min-width: 1440px) {
+  .offers {
+    padding-bottom: 1.5rem;
   }
-
 }
-
 
 /*Fin de base*/

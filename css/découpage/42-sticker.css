@@ -9,13 +9,13 @@
                                 I x5
 */
 
-.flexImg{
-    overflow: hidden;   
-    display: flex; 
+.flexImg {
+  overflow: hidden;
+  display: flex;
 }
 
-.imgFlex{
-    /* Attribuer une largeur ou une hauteur
+.imgFlex {
+  /* Attribuer une largeur ou une hauteur
      de 100% en fonction du besoin
      La hauteur ou largeur fixe doit être attribué à
      l'élément parrent
@@ -24,206 +24,181 @@
     */
 }
 
-
-.sticker{
-    border-radius: 1rem;
-    background-color: white;
-    padding: 0.25rem;
-    margin-bottom: 2rem;
-    box-shadow :0px 0px 9px -3px #686868;  
-    transition: 0.5s;
+.sticker {
+  border-radius: 1rem;
+  background-color: white;
+  padding: 0.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 9px -3px #686868;
+  transition: 0.5s;
 }
 
-  .sticker:hover{
-    transform:scale(1.1);
-    transition: 0.5s;
-  }
-
-
-
-.sticker__txt{
-    font-size : 0.85rem;
+.sticker:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
-.sticker__data{
-    flex-direction: column;
-    padding : 0.5rem  1.25rem;  
+.sticker__txt {
+  font-size: 0.85rem;
 }
 
-.popular .sticker{
-    height: 145px;
+.sticker__data {
+  flex-direction: column;
+  padding: 0.5rem 1.25rem;
 }
 
-.popular .flexImg{
-    max-width: 126px;  
+.popular .sticker {
+  height: 145px;
 }
 
-.popular .imgFlex{
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+.popular .flexImg {
+  max-width: 126px;
 }
 
-.popular .sticker__data{
-    padding-right : 3.75rem;
+.popular .imgFlex {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
 }
 
-
-.popular .sticker__title{
-    margin-bottom : 0.5rem;
+.popular .sticker__data {
+  padding-right: 3.75rem;
 }
 
-
-.rent .sticker{
-    flex-direction: column;
+.popular .sticker__title {
+  margin-bottom: 0.5rem;
 }
 
-
-.rent .flexImg{
-    height: 114px;  
+.rent .sticker {
+  flex-direction: column;
 }
 
-.rent .imgFlex{
-    width: 100%; 
-    height :100%;  
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem; 
+.rent .flexImg {
+  height: 114px;
 }
 
-.rent .sticker__data{
-    height: 79px;
-    justify-content: space-between;
+.rent .imgFlex {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
-
-.popular .star{
-    align-items: flex-end;
-    padding-bottom: 0.5rem;   
+.rent .sticker__data {
+  height: 79px;
+  justify-content: space-between;
 }
 
-.popular .sticker__txt{
-    flex : 0 1 100%;
-    align-items: flex-start;
-    padding-bottom: 0.5rem;   
+.popular .star {
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
 }
 
-.star i{   font-size:0.75rem;  margin-right : 1px;}
+.popular .sticker__txt {
+  flex: 0 1 100%;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
+}
 
-.watchMore {   font-weight : bold;}
+.star i {
+  font-size: 0.75rem;
+  margin-right: 1px;
+}
 
-
+.watchMore {
+  font-weight: bold;
+}
 
 /*Portable*/
 
 @media screen and (max-width: 767px) {
+  .rent {
+    background-color: white;
+    padding: 2.5rem 1.25rem 1rem;
+  }
+  .popular .sticker {
+    margin: 0 1.25rem 2rem;
+  }
 
-.rent{
-     background-color: white;   
-     padding : 2.5rem 1.25rem 1rem;
-}
-.popular .sticker{
-    margin : 0 1.25rem 2rem;
-}
+  .popular .star {
+    align-items: flex-end;
+  }
 
-.popular .star{
-    align-items: flex-end;    
-}
-
-.popular .sticker__data{
+  .popular .sticker__data {
     padding: 0.5rem 1.5rem;
+  }
 }
-
-
-
-
-
-
-
-}
-
 
 /*Laptop*/
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-    
-    .offers{
+  .offers {
+    flex-direction: column-reverse;
+  }
+  .popular {
+    margin: 0 0 2rem 0;
+    border-radius: 0;
+    padding-bottom: 2rem;
+  }
 
-        flex-direction: column-reverse;
-    }
-    .popular{
-        margin : 0 0 2rem 0;
-        border-radius : 0;
-        padding-bottom : 2rem;
-    }
-       
-    .sticker__list--popular{
-        display : flex;
-        flex-direction: row;
-        justify-content: space-between;
-       
-    }
+  .sticker__list--popular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .popular .sticker{
-        width : 32%;
-        margin : 0;
-        flex-direction: column;
-        height : 320px;
-    }
+  .popular .sticker {
+    width: 32%;
+    margin: 0;
+    flex-direction: column;
+    height: 320px;
+  }
 
-    .popular .flexImg{
-        min-height : 220px;
-        min-width : 100%;  
-    }
-    
-    .popular .imgFlex{
-        width: 100%; 
-        height :100%;  
-        border-top-left-radius: 0.75rem;
-        border-top-right-radius: 0.75rem;
-        border-bottom-left-radius: 0;
-    }
+  .popular .flexImg {
+    min-height: 220px;
+    min-width: 100%;
+  }
 
-    .popular .sticker__data{
-        display : flex;
-        padding : 0.5rem 1.2rem 0.5rem 1rem;
-        height : 100px;
-        justify-content: space-between;
-    }
-  
-    .popular .sticker__txt{
-        flex : 0 1 100%;
-        display : flex;
-        align-items: flex-end;
-        padding-bottom: 0.5rem;   
-    }
-    
-    
+  .popular .imgFlex {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border-bottom-left-radius: 0;
+  }
+
+  .popular .sticker__data {
+    display: flex;
+    padding: 0.5rem 1.2rem 0.5rem 1rem;
+    height: 100px;
+    justify-content: space-between;
+  }
+
+  .popular .sticker__txt {
+    flex: 0 1 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+  }
 }
 
 /*Desktop*/
 
 @media screen and (min-width: 1081px) {
-
-
-
 }
-
 
 /*Laptop AND Desktop*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+  .sticker__list--rent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
 
- .sticker__list--rent{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     width : 100%;
+  .rent .sticker {
+    width: 31%;
+  }
 }
-
-.rent .sticker{
-    width : 31%;
-}
- 
-}
-
 
 /*Fin de sticker*/
