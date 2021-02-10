@@ -39,7 +39,7 @@ Intgration d'une maquette founrie au format *.PNG d'un site de réservations de 
 - Des repères, comme ceux présent dans photshop m'on permis d'aligner correctement les éléments comme sur la maquette (Voir de le CSS body::after et body::before). Je pense d'ailleurs améliorer le concept avec JS afin d'obtenir un véritable outil développement pour les dévelopeurs front-end.
 - Il fut très difficile de reproduire avec exactitude la maquette en ayant pour matériaux de base une image PNG et non un fichier PSD.
 
-##  liens d'ébergements
+## Liens d'ébergements
 
 - Projet Reservia réalisé par Raphaël Parodi et hébergé sur [GitPages]( https://raficraft.github.io/reservia/)
 
