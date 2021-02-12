@@ -5,7 +5,7 @@ Deuxième projet du parcours développeur web d'OpenClassRooms.
 
 ## Objectif :
 
-Intgration d'une maquette founrie au format *.PNG d'un site de réservations de vacances.
+Intégration d'une maquette fournie au format *.PNG d'un site de réservations de vacances.
 
 ![Lien](https://user.oc-static.com/upload/2020/08/24/1598262857804_Maquette%20reservia-min.png "Reservia").
 
