@@ -146,7 +146,7 @@ a {
   color: black;
 }
 
-/* Les bases du projet sont posées dans cette partie 
+/* Les bases du projet sont posées dans cette partie
 de la feuille des styles.
 Les noeuds "primaire et secondaire" sont dimensionnés
 et agencé ici. */
@@ -335,16 +335,14 @@ footer,
     padding-bottom: 1.5rem;
   }
 }
-/*
-    HEADER .header
-            DIV .header__wrapper
-                P .logo
-                    A
-                     IMG
-                NAV .nav
-                    A .navLink x2
-                A .signup
-*/
+/* HEADER .header
+    DIV .header__wrapper
+        P .logo
+            A
+              IMG
+        NAV .nav
+            A .navLink x2
+        A .signup */
 
 .header__wrapper {
   flex-wrap: wrap;
