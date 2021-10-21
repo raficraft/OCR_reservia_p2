@@ -507,14 +507,14 @@ nav .nav__login {
 }
 
 .search i:nth-child(1) {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 3.25em;
   background-color: var(--gray);
   border-top-left-radius: 1em 1em;
   border-bottom-left-radius: 1em 1em;
-  font-size: 1rem;  
-  display: flex;
+  font-size: 1rem;
 }
 
 .search input {
