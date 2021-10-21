@@ -1161,6 +1161,7 @@ nav .nav__login {
     flex-direction: row;
     justify-content: space-between;
   }
+  
   .sticker__list--headband li {
     max-width: 22.5%;
     max-height: 440px;
