@@ -141,11 +141,10 @@ a {
   color: black;
 }
 
-/*Les bases du projet sont posées dans cette partie 
+/* Les bases du projet sont posées dans cette partie 
 de la feuille des styles.
 Les noeuds "primaire et secondaire" sont dimensionnés
-et agencé ici.
-*/
+et agencé ici. */
 
 :root {
   --blueBasic: #0065fc;
@@ -160,7 +159,7 @@ et agencé ici.
 html {
   scroll-behavior: smooth;
 }
-/*Repère vertical et horizontal.
+/* Repère vertical et horizontal.
 	Permet de contrôler les alignements.
 	NB:Ecrire une fonction SASS, 
 	réflechir à une grille de fond et|ou 
@@ -184,8 +183,7 @@ html {
 	  width: 100%;
 	  height : 1px;
 	  background-color: red;
-	}
-	*/
+	}	*/
 body {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
@@ -229,7 +227,7 @@ main {
   background-color: var(--gray);
 }
 
-/*Tous les elements déclarer en display : flex*/
+/* Tous les elements déclarer en display : flex */
 
 .header,
 .header__wrapper,
@@ -260,7 +258,7 @@ footer,
   display: flex;
 }
 
-/*Laptop*/
+/* Laptop */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .header__wrapper,
@@ -269,7 +267,7 @@ footer,
   }
 }
 
-/*Desktop*/
+/* Desktop */
 
 @media screen and (min-width: 1081px) {
   .header__wrapper,
@@ -281,7 +279,7 @@ footer,
   }
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .header,
   main,
@@ -335,7 +333,7 @@ footer,
   }
 }
 
-/*Desktop*/
+/* Desktop */
 @media screen and (min-width: 1440px) {
   .offers {
     padding-bottom: 1.5rem;
@@ -374,7 +372,7 @@ nav .nav__login {
   color: var(--blueBasic);
 }
 
-/*Portable*/
+/* Portable */
 
 @media screen and (max-width: 767px) {
   .logo {
@@ -421,7 +419,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .header {
     align-items: flex-end;
@@ -480,7 +478,7 @@ nav .nav__login {
   margin-bottom: 3rem;
 }
 
-/*Portable*/
+/* Portable */
 
 @media screen and (max-width: 767px) {
   .hangs {
@@ -547,7 +545,7 @@ nav .nav__login {
   font-weight: 500;
 }
 
-/*Portable*/
+/* Portable */
 
 @media screen and (max-width: 767px) {
   .btnDesktop {
@@ -568,7 +566,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .search Input {
     padding-right: 4rem;
@@ -645,7 +643,7 @@ nav .nav__login {
   border-bottom-right-radius: 1.5em 1.5em;
 }
 
-/*Effets au survol*/
+/* Effets au survol */
 
 .filter ul li:hover > a {
   background-color: var(--gray);
@@ -676,7 +674,7 @@ nav .nav__login {
   }
 }
 
-/*Portable*/
+/* Portable */
 
 @media screen and (max-width: 767px) {
   .filter {
@@ -692,7 +690,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop*/
+/* Laptop */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .filter {
@@ -703,7 +701,7 @@ nav .nav__login {
   }
 }
 
-/*Desktop*/
+/* Desktop */
 
 @media screen and (min-width: 1081px) {
   .filter {
@@ -711,7 +709,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .filter {
     margin-left: 8px;
@@ -780,7 +778,7 @@ nav .nav__login {
   font-size: 1.5rem;
 }
 
-/*Portable*/
+/* Portable */
 
 @media screen and (max-width: 767px) {
   .offers {
@@ -788,7 +786,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop*/
+/* Laptop */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .offers {
@@ -796,7 +794,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .offers {
     justify-content: space-between;
@@ -916,7 +914,7 @@ nav .nav__login {
   font-weight: bold;
 }
 
-/*Portable*/
+/* Portable */
 
 @media screen and (max-width: 767px) {
   .rent {
@@ -936,7 +934,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop*/
+/* Laptop */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .offers {
@@ -990,12 +988,12 @@ nav .nav__login {
   }
 }
 
-/*Desktop*/
+/* Desktop */
 
 @media screen and (min-width: 1081px) {
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .sticker__list--rent {
     display: flex;
@@ -1010,7 +1008,7 @@ nav .nav__login {
   }
 }
 
-/*Fin de sticker*/
+/* Fin de sticker */
 
 /*
     SECTION .rent
@@ -1022,12 +1020,12 @@ nav .nav__login {
                 A
 */
 
-/*Portable*/
+/* Portable */
 
 @media screen and (min-width: 767px) {
 }
 
-/*Laptop*/
+/* Laptop */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .rent {
@@ -1039,7 +1037,7 @@ nav .nav__login {
   }
 }
 
-/*Desktop*/
+/* Desktop */
 
 @media screen and (min-width: 1081px) {
   .rent {
@@ -1053,7 +1051,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 1081px) {
   .rent,
   .popular {
@@ -1095,7 +1093,7 @@ nav .nav__login {
   }
 }
 
-/*Fin de popular*/
+/* Fin de popular */
 
 /*
     SECTION .activity
@@ -1150,7 +1148,7 @@ nav .nav__login {
   height: 53px;
 }
 
-/*Portable*/
+/* Portable */
 
 @media screen and (max-width: 767px) {
   .activity {
@@ -1162,17 +1160,17 @@ nav .nav__login {
   }
 }
 
-/*Laptop*/
+/* Laptop */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
 }
 
-/*Desktop*/
+/* Desktop */
 
 @media screen and (min-width: 1081px) {
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .activity h1 {
     margin-bottom: 2rem;
@@ -1280,7 +1278,7 @@ nav .nav__login {
   }
 }
 
-/*Laptop AND Desktop*/
+/* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     width: 100%;
@@ -1311,7 +1309,7 @@ nav .nav__login {
   }
 }
 
-/*Ajustement pour résolution entre 768px et 1023px*/
+/* Ajustement pour résolution entre 768px et 1023px */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .sticker__list--popular .sticker:nth-child(3) .sticker__txt {
