@@ -613,6 +613,7 @@ nav .nav__login {
   margin-bottom: 1.25rem;
   height: 2.75em;
   border-radius: 1.5em;
+  transition: 1s;
 }
 
 .filter I {
@@ -644,24 +645,21 @@ nav .nav__login {
 
 /* Effets au survol */
 
-.filter ul li:hover > a {
+.filter UL LI:hover > A {
   background-color: var(--gray);
   transition: 0.5s;
 }
 
-.filter ul li a {
+.filter UL LI A {
   transition: 0.5s;
 }
 
-.filter ul li:hover i {
+.filter UL LI:hover I {
   background-color: var(--blueBasic);
   color: white;
   transition: 1s;
 }
 
-.filter ul li i {
-  transition: 1s;
-}
 
 @media screen and (min-width: 375px) AND (max-width: 766px) {
   .filter UL LI {
@@ -684,7 +682,7 @@ nav .nav__login {
     align-self: flex-start;
     flex: 0 1 100%;
   }
-  .filter ul {
+  .filter UL {
     flex-wrap: wrap;
   }
 }
@@ -717,10 +715,10 @@ nav .nav__login {
   .filter UL {
     flex-wrap: wrap;
   }
-  .filter h2 {
+  .filter H2 {
     margin-right: 2rem;
   }
-  .filter li {
+  .filter LI {
     margin: 0 1.5rem 0 0;
   }
 }
@@ -736,7 +734,7 @@ nav .nav__login {
   align-items: center;
 }
 
-.info i {
+.info I {
   min-height: 1.5rem;
   min-width: 1.5rem;
   border-radius: 50%;
@@ -750,7 +748,7 @@ nav .nav__login {
   align-items: center;
 }
 
-.info p {
+.info P {
   line-height: 1.25rem;
 }
 
@@ -770,7 +768,7 @@ nav .nav__login {
         SECTION .popular
 */
 
-.offers h1 {
+.offers H1 {
   margin-bottom: 2rem;
 }
 .fa-chart-line {
@@ -904,7 +902,7 @@ nav .nav__login {
   padding-bottom: 0.5rem;
 }
 
-.star i {
+.star I {
   font-size: 0.75rem;
   margin-right: 1px;
 }
@@ -920,7 +918,7 @@ nav .nav__login {
     background-color: white;
     padding: 2.5rem 1.25rem 1rem;
   }
-  
+
   .popular .sticker {
     margin: 0 1.25rem 2rem;
   }
@@ -1123,11 +1121,11 @@ nav .nav__login {
   flex-direction: column;
 }
 
-.sticker__list--headband ul {
+.sticker__list--headband UL {
   flex-direction: column;
 }
 
-.sticker__list--headband ul li {
+.sticker__list--headband UL LI {
   flex-direction: column;
 }
 
@@ -1177,7 +1175,7 @@ nav .nav__login {
     margin-bottom: 2rem;
   }
 
-  .sticker__list--headband ul {
+  .sticker__list--headband UL {
     flex-direction: row;
     justify-content: space-between;
   }
