@@ -210,10 +210,12 @@ main,
 .header {
   margin-bottom: 1.5rem;
 }
+
 .header__wrapper {
   background-color: white;
   width: 100%;
 }
+
 main {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -591,16 +593,16 @@ nav .nav__login {
   padding-left: 0.25rem;
 }
 
-.filter H2 {
+.filter h2 {
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
-.filter UL {
+.filter ul {
   justify-content: flex-start;
 }
 
-.filter UL li {
+.filter ul li {
   position: relative;
   z-index: 0;
   padding-left: 1.25rem;
@@ -610,7 +612,7 @@ nav .nav__login {
   border-radius: 1.5em;
 }
 
-.filter I {
+.filter i {
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -625,7 +627,7 @@ nav .nav__login {
   background-color: var(--softBlue);
 }
 
-.filter LI A {
+.filter li a {
   align-items: center;
   height: 3.25em;
   margin: 0;
@@ -659,11 +661,11 @@ nav .nav__login {
 }
 
 @media screen and (min-width: 375px) AND (max-width: 766px) {
-  .filter UL LI {
+  .filter ul li {
     margin-right: 0.625rem;
   }
 
-  .filter LI A {
+  .filter li a {
     padding-left: 2rem;
   }
 }
@@ -709,7 +711,7 @@ nav .nav__login {
     margin-left: 8px;
     margin-bottom: 1.5rem;
   }
-  .filter UL {
+  .filter ul {
     flex-wrap: wrap;
   }
   .filter h2 {
@@ -1094,25 +1096,23 @@ nav .nav__login {
 
 /* Fin de popular */
 
-/*
-    SECTION .activity
-        ARTICLE .sticker__list--headband
-             UL
-              LI
-               A .sticker .sticker__IMG--full   
-                    P.flexImg                   | 
-                        IMG .imgFlex            | Strucuture répétée
-                    DIV .sticker__data          | Dans chaque balise A .sticker
-                    H2  .sticker__txt           |
-              LI 
-                A .sticker .sticker__IMG--medium
-                A .sticker .sticker__IMG--small
-              LI
-                A .sticker .sticker__IMG--full
-              LI 
-                A .sticker .sticker__IMG--medium2
-                A .sticker .sticker__IMG--small2 
-*/
+/* SECTION .activity
+    ARTICLE .sticker__list--headband
+          UL
+          LI
+            A .sticker .sticker__IMG--full   
+                P.flexImg                   | 
+                    IMG .imgFlex            | Strucuture répétée
+                DIV .sticker__data          | Dans chaque balise A .sticker
+                H2  .sticker__txt           |
+          LI 
+            A .sticker .sticker__IMG--medium
+            A .sticker .sticker__IMG--small
+          LI
+            A .sticker .sticker__IMG--full
+          LI 
+            A .sticker .sticker__IMG--medium2
+            A .sticker .sticker__IMG--small2 */
 
 .activity {
   flex-direction: column;
@@ -1241,14 +1241,12 @@ nav .nav__login {
   }
 }
 
-/* 
-    FOOTER
-        .footer__wrapper
-                    SECTION x 3
-                          UL
-                           LI
-                            A
-*/
+/* FOOTER
+    .footer__wrapper
+                SECTION x 3
+                      UL
+                        LI
+                        A */
 
 .footer {
   display: flex;
