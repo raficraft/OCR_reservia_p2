@@ -236,7 +236,6 @@ nav,
 .info i,
 .hangs,
 .search,
-.search i:nth-child(1),
 .searchSubmit,
 .filter,
 .filter ul,
@@ -514,7 +513,8 @@ nav .nav__login {
   background-color: var(--gray);
   border-top-left-radius: 1em 1em;
   border-bottom-left-radius: 1em 1em;
-  font-size: 1rem;
+  font-size: 1rem;  
+  display: flex;
 }
 
 .search input {
@@ -933,7 +933,6 @@ nav .nav__login {
 /* Laptop */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-
   .offers {
     flex-direction: column-reverse;
   }
@@ -1069,7 +1068,6 @@ nav .nav__login {
     margin: 0 0 2rem 0;
     border-radius: 0;
     padding-bottom: 2rem;
-    border-radius: 0;
   }
 
   .headerPopular {
@@ -1089,7 +1087,7 @@ nav .nav__login {
     ARTICLE .sticker__list--headband
           ul
           li
-            a .sticker .sticker__IMG--full   
+            a .sticker .sticker__IMG--full
                 P.flexImg                   |
                     IMG .imgFlex            | Strucuture répétée
                 DIV .sticker__data          | Dans chaque balise A .sticker
