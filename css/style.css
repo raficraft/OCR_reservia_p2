@@ -1098,21 +1098,21 @@ nav .nav__login {
 
 /* SECTION .activity
     ARTICLE .sticker__list--headband
-          UL
-          LI
-            A .sticker .sticker__IMG--full   
+          ul
+          li
+            a .sticker .sticker__IMG--full   
                 P.flexImg                   | 
                     IMG .imgFlex            | Strucuture répétée
                 DIV .sticker__data          | Dans chaque balise A .sticker
-                H2  .sticker__txt           |
-          LI 
-            A .sticker .sticker__IMG--medium
-            A .sticker .sticker__IMG--small
-          LI
-            A .sticker .sticker__IMG--full
-          LI 
-            A .sticker .sticker__IMG--medium2
-            A .sticker .sticker__IMG--small2 */
+                h2  .sticker__txt           |
+          li
+            a .sticker .sticker__IMG--medium
+            a .sticker .sticker__IMG--small
+          li
+            a .sticker .sticker__IMG--full
+          li 
+            a .sticker .sticker__IMG--medium2
+            a .sticker .sticker__IMG--small2 */
 
 .activity {
   flex-direction: column;
