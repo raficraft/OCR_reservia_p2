@@ -41,5 +41,3 @@ Intgration d'une maquette founrie au format *.PNG d'un site de réservations de 
 ## liens d'ébergements
 
 -   Projet Reservia réalisé par Raphaël Parodi et hébergé sur [GitPages]( https://raficraft.github.io/reservia/)
-
-
