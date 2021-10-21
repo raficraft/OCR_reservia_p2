@@ -319,14 +319,13 @@ footer,
     flex-direction: column;
     background-color: var(--gray);
     padding: 2.5rem 2rem 0;
+    margin-left: 1.25rem;
   }
 
   .rent {
     margin-right: 1.25rem;
   }
-  .popular {
-    margin-left: 1.25rem;
-  }
+ 
 
   .headband {
     margin-top: 2rem;
@@ -857,7 +856,7 @@ nav .nav__login {
 }
 
 .popular .flexImg {
-  max-width: 126px;
+  min-width: 126px;
 }
 
 .popular .imgFlex {
