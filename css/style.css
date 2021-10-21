@@ -249,7 +249,6 @@ nav,
 .headerPopular,
 .activity,
 .sticker__list--headband ul,
-.sticker__list--headband ul li,
 .activity .sticker__data,
 footer,
 .footer__wrapper {
@@ -1113,7 +1112,8 @@ nav .nav__login {
   flex-direction: column;
 }
 
-.sticker__list--headband ul li {
+.sticker__list--headband ul li {  
+  display: flex;
   flex-direction: column;
 }
 
@@ -1161,7 +1161,7 @@ nav .nav__login {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .sticker__list--headband li {
     max-width: 22.5%;
     max-height: 440px;
