@@ -230,7 +230,6 @@ main {
 /* Tous les elements déclarer en display : flex */
 
 .header,
-.header__wrapper,
 nav,
 .nav,
 .info,
@@ -348,6 +347,7 @@ footer,
         A .signup */
 
 .header__wrapper {
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -1272,7 +1272,7 @@ nav .nav__login {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .footer__wrapper section {
     display: flex;
     flex-direction: column;
