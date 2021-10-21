@@ -164,15 +164,14 @@ et agencé ici. */
 html {
   scroll-behavior: smooth;
 }
+
 /* Repère vertical et horizontal.
 	Permet de contrôler les alignements.
-	NB:Ecrire une fonction SASS, 
-	réflechir à une grille de fond et|ou 
+	NB:Ecrire une fonction SASS,
+	réflechir à une grille de fond et|ou
 	en sur-impression.
-	Outil JS dans le coin inférieure 
+	Outil JS dans le coin inférieure
 	de l'écran.
-	
-	
 	body::after{
 	  position: fixed;
 	  left : 1.25rem;
