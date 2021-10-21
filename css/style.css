@@ -831,7 +831,7 @@ nav .nav__login {
   background-color: white;
   padding: 0.25rem;
   margin-bottom: 2rem;
-  box-shadow: 0px 0px 9px -3px #686868;
+  box-shadow: 0px 0px 9px 0px #686868;
   transition: 0.5s;
 }
 
@@ -919,6 +919,7 @@ nav .nav__login {
     background-color: white;
     padding: 2.5rem 1.25rem 1rem;
   }
+
   .popular .sticker {
     margin: 0 1.25rem 2rem;
   }
@@ -939,6 +940,7 @@ nav .nav__login {
   .offers {
     flex-direction: column-reverse;
   }
+
   .popular {
     margin: 0 0 2rem 0;
     border-radius: 0;
@@ -1091,7 +1093,7 @@ nav .nav__login {
           ul
           li
             a .sticker .sticker__IMG--full   
-                P.flexImg                   | 
+                P.flexImg                   |
                     IMG .imgFlex            | Strucuture répétée
                 DIV .sticker__data          | Dans chaque balise A .sticker
                 h2  .sticker__txt           |
@@ -1270,6 +1272,7 @@ nav .nav__login {
     flex-direction: row;
     justify-content: space-between;
   }
+  
   .footer__wrapper section {
     display: flex;
     flex-direction: column;
