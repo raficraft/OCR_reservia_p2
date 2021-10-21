@@ -614,6 +614,19 @@ nav .nav__login {
   border-radius: 1.5em;
 }
 
+.filter ul li a {
+  transition: 0.5s;
+  align-items: center;
+  height: 3.25em;
+  margin: 0;
+  padding-left: 2.75em;
+  padding-right: 1em;
+  font-weight: 700;
+  border: 2px solid rgba(217, 217, 217, 1);
+  border-top-right-radius: 1.5em 1.5em;
+  border-bottom-right-radius: 1.5em 1.5em;
+}
+
 .filter i {
   justify-content: center;
   align-items: center;
@@ -629,26 +642,10 @@ nav .nav__login {
   background-color: var(--softBlue);
 }
 
-.filter li a {
-  align-items: center;
-  height: 3.25em;
-  margin: 0;
-  padding-left: 2.75em;
-  padding-right: 1em;
-  font-weight: 700;
-  border: 2px solid rgba(217, 217, 217, 1);
-  border-top-right-radius: 1.5em 1.5em;
-  border-bottom-right-radius: 1.5em 1.5em;
-}
-
 /* Effets au survol */
 
 .filter ul li:hover > a {
   background-color: var(--gray);
-  transition: 0.5s;
-}
-
-.filter ul li a {
   transition: 0.5s;
 }
 
