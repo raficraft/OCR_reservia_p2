@@ -238,9 +238,9 @@ nav,
 .search i:nth-child(1),
 .searchSubmit,
 .filter,
-.filter UL,
-.filter I,
-.filter LI A,
+.filter ul,
+.filter i,
+.filter li a,
 .offers,
 .sticker,
 .sticker__data,
@@ -815,9 +815,9 @@ nav .nav__login {
   /* Attribuer une largeur ou une hauteur
      de 100% en fonction du besoin
      La hauteur ou largeur fixe doit être attribué à
-     l'élément parrent
-    width : 100%;
-    height :100%;  
+     l'élément parent
+    width: 100%;
+    height: 100%;  
     */
   object-fit: cover;
 }
@@ -1070,21 +1070,26 @@ nav .nav__login {
   .offers {
     flex-direction: column-reverse;
   }
+
   .popular {
     margin: 0 0 2rem 0;
     border-radius: 0;
     padding-bottom: 2rem;
     border-radius: 0;
   }
+
   .headerPopular {
     padding: 0;
   }
+
 }
 
 @media screen and (min-width: 1080px) {
+
   .headerPopular {
     padding: 0;
   }
+
 }
 
 /* Fin de popular */
@@ -1255,7 +1260,7 @@ nav .nav__login {
   flex-direction: column;
 }
 
-.footer SECTION {
+.footer section {
   margin-bottom: 2rem;
 }
 
