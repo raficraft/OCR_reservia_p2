@@ -167,7 +167,6 @@ html {
 	en sur-impression.
 	Outil JS dans le coin inférieure
 	de l'écran.	
-	
 	body::after{
 	  position: fixed;
 	  left : 1.25rem;
@@ -504,7 +503,7 @@ nav .nav__login {
 }
 
 .searchLocation,
-.search input,
+.search INPUT,
 .search {
   height: 3.25rem;
 }
