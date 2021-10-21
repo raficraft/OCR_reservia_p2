@@ -25,7 +25,6 @@ en sur-impression.
 Outil JS dans le coin inférieure 
 de l'écran.
 
-
 body:after{
   position: fixed;
   left : 1.25rem;
@@ -71,9 +70,11 @@ main,
 .header {
   margin-bottom: 1.5rem;
 }
+
 .header__wrapper {
   background-color: white;
 }
+
 main {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
