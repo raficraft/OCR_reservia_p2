@@ -540,6 +540,7 @@ nav .nav__login {
   color: white;
   font-size: 1rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* Portable */
@@ -1074,15 +1075,12 @@ nav .nav__login {
   .headerPopular {
     padding: 0;
   }
-
 }
 
 @media screen and (min-width: 1080px) {
-
   .headerPopular {
     padding: 0;
   }
-
 }
 
 /* Fin de popular */
@@ -1147,6 +1145,10 @@ nav .nav__login {
 
   .activity .sticker {
     padding: 0;
+  }
+
+  .activity .imgFlex {
+    width: 100%;
   }
 }
 
@@ -1248,7 +1250,7 @@ nav .nav__login {
   margin: 1rem 0 1rem 0;
 }
 
-.footer ul li:hover > a{
+.footer ul li:hover > a {
   text-decoration: underline;
 }
 
