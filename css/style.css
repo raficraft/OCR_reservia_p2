@@ -1160,16 +1160,6 @@ nav .nav__login {
   }
 }
 
-/* Laptop */
-
-@media screen and (min-width: 768px) and (max-width: 1080px) {
-}
-
-/* Desktop */
-
-@media screen and (min-width: 1081px) {
-}
-
 /* Laptop AND Desktop */
 @media screen and (min-width: 768px) {
   .activity h1 {
@@ -1206,6 +1196,7 @@ nav .nav__login {
     max-height: 234px;
     height: 234px;
   }
+
   .sticker__img--medium .flexImg {
     max-height: 196px;
     height: 196px;
@@ -1230,6 +1221,7 @@ nav .nav__login {
     max-height: 200px;
     height: 200px;
   }
+
   .sticker__img--small2 .flexImg {
     max-height: 150px;
     height: 150px;
@@ -1266,7 +1258,7 @@ nav .nav__login {
   margin: 1rem 0 1rem 0;
 }
 
-.footer A:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 
@@ -1284,7 +1276,7 @@ nav .nav__login {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer__wrapper SECTION {
+  .footer__wrapper section {
     display: flex;
     flex-direction: column;
     width: 30%;
