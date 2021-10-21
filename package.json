@@ -1,0 +1,34 @@
+{
+  "name": "ocr_reservia",
+  "version": "1.0.0",
+  "description": "Intégration maquette HTML/CSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-md": "remark ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raficraft/OCR_reservia.git"
+  },
+  "author": "raficraft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raficraft/OCR_reservia/issues"
+  },
+  "homepage": "https://github.com/raficraft/OCR_reservia#readme",
+  "dependencies": {
+    "remark-cli": "^10.0.0",
+    "remark-lint": "^9.1.0"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      [
+        "remark-lint-list-item-indent",
+        false
+      ],
+      "remark-preset-lint-recommended"
+    ]
+  }
+}
