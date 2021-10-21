@@ -517,7 +517,7 @@ nav .nav__login {
   font-size: 1rem;
 }
 
-.search INPUT {
+.search input {
   margin: 0;
   border: 1px solid var(--gray);
   text-indent: 1rem;
@@ -525,7 +525,7 @@ nav .nav__login {
   padding-right: 1.5rem;
 }
 
-.search INPUT::placeholder {
+.search input::placeholder {
   font-weight: bold;
   font-size: 1rem;
   color: black;
@@ -679,10 +679,12 @@ nav .nav__login {
     flex-direction: column;
     align-items: center;
   }
+
   .filter h2 {
     align-self: flex-start;
     flex: 0 1 100%;
   }
+
   .filter ul {
     flex-wrap: wrap;
   }
@@ -694,6 +696,7 @@ nav .nav__login {
   .filter {
     flex-direction: column;
   }
+
   .filter h2 {
     margin-bottom: 1rem;
   }
@@ -713,12 +716,15 @@ nav .nav__login {
     margin-left: 8px;
     margin-bottom: 1.5rem;
   }
+
   .filter ul {
     flex-wrap: wrap;
   }
+
   .filter h2 {
     margin-right: 2rem;
   }
+
   .filter li {
     margin: 0 1.5rem 0 0;
   }
@@ -772,6 +778,7 @@ nav .nav__login {
 .offers h1 {
   margin-bottom: 2rem;
 }
+
 .fa-chart-line {
   font-size: 1.5rem;
 }
