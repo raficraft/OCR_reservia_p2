@@ -1016,7 +1016,6 @@ nav .nav__login {
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .rent {
     margin: 0 0 2rem 0;
-    border-radius: 0;
     padding-bottom: 2rem;
     border-radius: 0;
     background-color: white;
