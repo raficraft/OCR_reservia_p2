@@ -124,10 +124,10 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: "";
   content: none;
 }
@@ -169,7 +169,7 @@ html {
 	de l'écran.
 	
 	
-	body:after{
+	body::after{
 	  position: fixed;
 	  left : 1.25rem;
 	  content : '';
@@ -177,7 +177,7 @@ html {
 	  height : 100%;
 	  background-color: red;
 	}
-	body:before{
+	body::before{
 	  position: fixed;
 	  top : 60px;
 	  content : '';
