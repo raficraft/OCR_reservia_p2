@@ -1,6 +1,7 @@
+# Transformez une maquette en site web
+
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6c59cd6fae134d43a0a5e0cb98e8b872)](https://www.codacy.com/gh/raficraft/OCR_reservia/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=raficraft/OCR_reservia&amp;utm_campaign=Badge_Grade)
 
-# Transformez une maquette en site web
 Intégration maquette HTML/CSS 
 
 Deuxième projet du parcours développeur web d'OpenClassRooms.
