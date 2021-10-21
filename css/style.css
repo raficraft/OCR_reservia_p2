@@ -89,8 +89,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
@@ -302,7 +302,6 @@ footer,
   }
 
   .hangs {
-    margin-bottom: 2.5rem;
     background-color: white;
     margin-bottom: 2rem;
     flex-direction: column;
