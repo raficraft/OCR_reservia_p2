@@ -162,12 +162,11 @@ html {
 }
 /* Repère vertical et horizontal.
 	Permet de contrôler les alignements.
-	NB:Ecrire une fonction SASS, 
-	réflechir à une grille de fond et|ou 
+	NB:Ecrire une fonction SASS,
+	réflechir à une grille de fond et|ou
 	en sur-impression.
-	Outil JS dans le coin inférieure 
-	de l'écran.
-	
+	Outil JS dans le coin inférieure
+	de l'écran.	
 	
 	body::after{
 	  position: fixed;
@@ -185,6 +184,7 @@ html {
 	  height : 1px;
 	  background-color: red;
 	}	*/
+
 body {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
@@ -192,7 +192,7 @@ body {
   flex-direction: column;
 }
 
-h1 {
+H1 {
   font-size: 1.375rem;
   font-weight: 700;
   display: flex;
@@ -200,7 +200,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-h2 {
+H2 {
   font-weight: bold;
 }
 
@@ -325,7 +325,6 @@ footer,
   .rent {
     margin-right: 1.25rem;
   }
- 
 
   .headband {
     margin-top: 2rem;
@@ -537,7 +536,7 @@ nav .nav__login {
 .searchSubmit {
   align-items: center;
   justify-content: center;
-  height: calc(3rem+2px);
+  height: 50px;
   border: none;
   background-color: var(--blueBasic);
   color: white;
@@ -921,6 +920,7 @@ nav .nav__login {
     background-color: white;
     padding: 2.5rem 1.25rem 1rem;
   }
+  
   .popular .sticker {
     margin: 0 1.25rem 2rem;
   }
@@ -1140,7 +1140,7 @@ nav .nav__login {
   height: 100%;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
-  width : 300px;
+  width: 300px;
 }
 
 .activity .sticker__data {
