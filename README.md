@@ -1,5 +1,6 @@
 # Transformez une maquette en site web
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1296c230d59347649e304c3bc11ce18e)](https://app.codacy.com/gh/raficraft/OCR_reservia?utm_source=github.com&utm_medium=referral&utm_content=raficraft/OCR_reservia&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6c59cd6fae134d43a0a5e0cb98e8b872)](https://www.codacy.com/gh/raficraft/OCR_reservia/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=raficraft/OCR_reservia&amp;utm_campaign=Badge_Grade)
 
 Intégration maquette HTML/CSS 
