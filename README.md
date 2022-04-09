@@ -18,7 +18,7 @@ Deuxième projet du parcours développeur web d'OpenClassRooms.
 
 # Github page
 
--   Projet Reservia réalisé par Raphaël Parodi et hébergé avec [GitPages]( https://raficraft.github.io/reservia/)
+-   Projet Reservia réalisé par Raphaël Parodi et hébergé avec [GitPages](https://raficraft.github.io/OCR_reservia_p2/)
 
 <br>
 
